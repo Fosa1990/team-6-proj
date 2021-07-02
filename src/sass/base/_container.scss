@@ -1,1 +1,36 @@
 // Стилі контейнеру
+// Контейнер Div
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1316px;
+  }
+
+  @media screen and (max-width: 1365px) {
+    max-width: 688px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 688px;
+  }
+
+  @media screen and (max-width: 479px) {
+    max-width: 280px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+  }
+
+  // // Убрать вертикальный паддинг
+  // &.no-padding {
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  // }
+}
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1366px;
