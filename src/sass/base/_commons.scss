@@ -1,0 +1,29 @@
+// Загаліні стилі
+// Добавляє плавний скрол по всій сторінці
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+// Картинки: робимо блоковими + забираємо простір під картинкою
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// забираєм підкреслення і правий відступ у посилань
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+// забираєм крапку, margin и padding y всіх списках
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
