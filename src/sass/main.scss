@@ -1,18 +1,13 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
 // Стили для файла с примером HTML-фрагмента
-@import './page-header';
-@import './page-hero';
-@import './page-advantages';
-@import './page-problems';
-@import './page-how-we-do';
-@import './page-program';
-@import './page-benefits';
-@import './page-about';
-@import './page-guarantee';
-@import './page-reviews';
-@import './page-contacts';
-@import './page-footer';
+@import './layout/page-header';
+@import './layout/page-hero';
+@import './layout/page-advantages';
+@import './layout/page-problems';
+@import './layout/page-how-we-do';
+@import './layout/page-program';
+@import './layout/page-benefits';
+@import './layout/page-about';
+@import './layout/page-guarantee';
+@import './layout/page-reviews';
+@import './layout/page-contacts';
+@import './layout/page-footer';
