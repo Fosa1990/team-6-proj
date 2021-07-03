@@ -1,1 +1,32 @@
 // Всі перемінні. Кольори, тіні, фонти, кубік, час і т.д. [ $ім'я ]
+
+// Colors
+// Named colors
+$white-color: #ffffff;
+$black-color: #000000;
+// colors Text
+$text-primary-color: #b9b9b9;
+$text-second-color: #111518;
+$text-third-color: #3d3d3d;
+// color Accent
+$accent-color: #ff6b09;
+// color backgrounds
+$bg-main-color: rgba(17, 21, 24, 0.9);
+$bg-second-color: #f1f1f1;
+// color Shadows
+$shadow-primary-color: rgba(0, 0, 0, 0.04);
+$shadow-second-color: rgba(0, 0, 0, 0.1);
+$shadow-third-color: rgba(0, 0, 0, 0.25);
+
+// Times for transformations
+$time0ms: 0ms;
+$time250ms: 250ms;
+$time500ms: 500ms;
+$time750ms: 750ms;
+$time1000ms: 1000ms;
+$time1250ms: 1250ms;
+$time1500ms: 1500ms;
+$time1750ms: 1750ms;
+$time2000ms: 2000ms;
+$time2250ms: 2250ms;
+$time2500ms: 2500ms;
