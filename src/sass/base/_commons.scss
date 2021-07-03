@@ -6,6 +6,15 @@ html {
 
 body {
   margin: 0 auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  // font-size: 14px;
+  // font-size: 20px;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 // Картинки: робимо блоковими + забираємо простір під картинкою
@@ -21,7 +30,7 @@ a {
   display: inline-block;
 }
 
-// забираєм крапку, margin и padding y всіх списках
+// забираєм крапку, margin i padding y всіх списках
 ul {
   list-style-type: none;
   margin: 0;
