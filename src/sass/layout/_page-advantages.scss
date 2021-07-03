@@ -1,0 +1,48 @@
+// <Section>
+.advantages {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+//  <Ul>
+.advantages-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+// <Li>
+.advantages-item {
+  position: relative;
+
+  padding: 7px 51px 7px 110px;
+
+  font-weight: 700;
+  line-height: 1.649;
+  letter-spacing: 0.08em;
+
+  color: $text-second-color;
+}
+.advantages-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+// <Li::before>
+.advantages-item::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 40px;
+
+  background-image: url(../images/advantages/icon-advantages-1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// <Li::before [ 2 ] >
+.advantages-item:nth-child(2)::before {
+  background-image: url(../images/advantages/icon-advantages-2.svg);
+}
+// <Li::before [ 3 ]>
+.advantages-item:nth-child(3)::before {
+  background-image: url(../images/advantages/icon-advantages-3.svg);
+}
