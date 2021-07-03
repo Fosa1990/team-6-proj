@@ -2,35 +2,47 @@
 // Контейнер Div
 .container {
   width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
   padding-right: 15px;
-
-  @media screen and (min-width: $desktop) {
-    max-width: 1316px;
-  }
-
-  @media screen and (max-width: 1365px) {
-    max-width: 688px;
-  }
-
-  @media screen and (max-width: 767px) {
-    max-width: 688px;
-  }
-
-  @media screen and (max-width: 479px) {
-    max-width: 280px;
-    // padding-left: 15px;
-    // padding-right: 15px;
-  }
-
-  // // Убрать вертикальный паддинг
-  // &.no-padding {
-  //   padding-top: 0;
-  //   padding-bottom: 0;
-  // }
+  padding-left: 15px;
 }
 
-$mobile: 480px;
-$tablet: 768px;
-$desktop: 1366px;
+// 320+
+@media screen and (min-width: $mobile) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+// // 480+
+// @media screen and (min-width: $mobile) {
+//   .container {
+//     width: 320px;
+
+//     padding-right: 20px;
+//     padding-left: 20px;
+//   }
+// }
+
+// 768+
+@media screen and (min-width: $tablet) {
+  .container {
+    width: 768px;
+
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+// 1366+
+
+@media screen and (min-width: $desktop) {
+  .container {
+    width: 1366px;
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+}
