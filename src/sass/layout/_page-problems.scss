@@ -1,0 +1,97 @@
+h6::before {
+  //   Инкрементирует счётчик
+  counter-increment: section;
+  ///* Отображает текущее значение счётчика
+  content: 'Секция ' counter(section) ': ';
+}
+
+// <Section>
+.problems {
+  padding: 50px 0;
+
+  background-color: $black-color;
+  background-image: linear-gradient(
+    to bottom,
+    $text-second-color 72%,
+    $white-color 72%,
+    $white-color 100%
+  );
+}
+// <H2>
+.problems-title {
+  margin-bottom: 30px;
+  padding-right: 40px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  text-align: start;
+
+  color: $white-color;
+}
+// <Span>
+.accent {
+  color: $accent-color;
+}
+// <UL>
+.problems-list {
+  padding: 20px 30px;
+
+  background-color: $white-color;
+  box-shadow: -5px 8px 26px $shadow-primary-color;
+
+  @media screen and (min-width: $tablet-768) {
+    padding: 30px 20px 10px;
+  }
+}
+// <LI>
+.problems-item {
+  counter-increment: section;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: $tablet-768) {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: calc((100% - 2 * 30px) / 2);
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 20px;
+    }
+  }
+  // media 1366+
+  @media screen and (min-width: $desktop-1366) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .problems-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+// Counter
+.problems-item::before {
+  content: '\2015  0'counter(section) '';
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+
+  color: $accent-color;
+}
