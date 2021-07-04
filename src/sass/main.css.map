@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "layout/_page-header.scss",
+        "layout/_page-hero.scss",
+        "layout/_page-advantages.scss",
+        "layout/_page-problems.scss",
+        "layout/_page-how-we-do.scss",
+        "layout/_page-program.scss",
+        "layout/_page-benefits.scss",
+        "layout/_page-about.scss",
+        "layout/_page-guarantee.scss",
+        "layout/_page-reviews.scss",
+        "layout/_page-contacts.scss",
+        "layout/_page-footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
