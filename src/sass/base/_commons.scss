@@ -11,6 +11,9 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+
+  // Устанавливает значение счётчика, равным 0
+  counter-reset: section;
 }
 
 body.modal-open {
@@ -26,6 +29,10 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+label {
+  display: block;
 }
 
 ol,
