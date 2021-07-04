@@ -17,8 +17,6 @@ ul {
 
 
 .section-title {
-    font-family: Montserrat;
-font-style: normal;
 font-weight: 800;
 font-size: 20px;
 line-height: 130%;
@@ -95,7 +93,7 @@ color: #111518;
   
     &:hover,
     &:focus {
-        background: #FF6B09;
+        background: $accent-color;
         box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
       
     }
@@ -117,7 +115,7 @@ color: #111518;
 }
 
   .card-title {
-    font-family: Montserrat;
+    
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -129,8 +127,6 @@ color: #111518;
 
     @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
         flex-direction: row;
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 28px;
@@ -142,22 +138,18 @@ color: #111518;
 
     @media screen and (min-width: $desktop-1366) {
         flex-direction: row;
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: bold;
         font-size: 20px;
         line-height: 28px;
         /* or 140% */
         text-align: center;
         letter-spacing: 0.08em;
-        color: #111518;
+        color: $text-second-color;
     }
 
   }
 
 .card-text {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
@@ -169,8 +161,6 @@ color: #111518;
 
     @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
         flex-direction: row;
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 28px;
@@ -181,8 +171,6 @@ color: #111518;
 
     @media screen and (min-width: $desktop-1366) {
         flex-direction: row;
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 28px;
