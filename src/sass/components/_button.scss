@@ -1,1 +1,18 @@
 // Стилі кнопки
+.button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 46px 14px 46px;
+}
+.button {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $white-color;
+  background: $accent-color;
+  cursor: pointer;
+  border: 0;
+}

@@ -1,9 +1,29 @@
 .hero-title {
-  font-family: Montserrat;
-  font-style: normal;
+  margin-bottom: 55px;
+}
+.hero-title {
   font-weight: 800;
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  color: #111518;
+  color: $text-second-color;
+}
+.hero-davis {
+  margin-bottom: 30px;
+}
+.hero-davis {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+}
+.hero-first_davis {
+  font-weight: 500;
+  color: $text-primary-color;
+}
+.hero-second_davis {
+  color: $text-second-color;
+}
+.hero-third_davis {
+  color: $accent-color;
 }
