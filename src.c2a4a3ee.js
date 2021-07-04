@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/advantages/icon-advantages-1.svg":[["icon-advantages-1.c0512af4.svg","tuEy"],"tuEy"],"./../images/advantages/icon-advantages-desktop-1.svg":[["icon-advantages-desktop-1.e783c7cd.svg","g2oa"],"g2oa"],"./../images/advantages/icon-advantages-2.svg":[["icon-advantages-2.100cbaec.svg","QyQh"],"QyQh"],"./../images/advantages/icon-advantages-desktop-2.svg":[["icon-advantages-desktop-2.7ec9eff6.svg","wQTB"],"wQTB"],"./../images/advantages/icon-advantages-3.svg":[["icon-advantages-3.beb51f23.svg","hSex"],"hSex"],"./../images/advantages/icon-advantages-desktop-3.svg":[["icon-advantages-desktop-3.0106a717.svg","atTa"],"atTa"],"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-6-proj/src.b8daf4eb.js.map
+//# sourceMappingURL=/team-6-proj/src.c2a4a3ee.js.map
