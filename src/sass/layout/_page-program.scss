@@ -4,17 +4,52 @@
   padding-bottom: 537px;
 }
 
-.program-wrapper {
-  padding-left: calc((100vw - 144px) / 2);
+.program-container {
+  position: relative;
+  padding-left: calc((100vw - 132px) / 2);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 63vw;
+    bottom: -97px;
+    width: 176px;
+    height: 137px;
+    background-color: $accent-color;
+    // Замінити зображення
+    background-image: url(../images/demo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+  }
 }
 
-.program-container {
-  padding-left: 26px;
-  border-left: 1px solid $white-color;
+// 2x, 0 - 767px
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .program-container {
+    &::after {
+      // Замінити зображення
+      background-image: url(../images/demo.jpg);
+    }
+  }
 }
 
 .program-list-first {
-  max-width: 230px;
+  position: relative;
+  padding-left: 26px;
+  // border-left: 1px solid $white-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 1px;
+    height: calc(100% - 95px);
+    background-color: red;
+  }
 }
 
 .program-title {
@@ -29,6 +64,7 @@
 }
 
 .program-item-first {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
@@ -39,6 +75,19 @@
   &:not(:last-child) {
     margin-bottom: 40px;
   }
+
+  &::before {
+    content: '';
+    position: absolute;
+    // left: -26px;
+    left: -25px;
+    top: 14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    transform: translate(-54%, -50%);
+  }
 }
 
 .program-list-second {
@@ -47,19 +96,32 @@
 }
 
 .program-item-second {
-  font-weight: 400;
+  position: relative;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.65;
   letter-spacing: 0.08em;
   color: $accent-color;
+  text-indent: 17px;
 
   &:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 12px;
+    height: 1px;
+    background-color: $accent-color;
   }
 }
 
 .program-list-third {
   margin-top: 5px;
+  text-indent: 0;
 }
 
 .program-item-third {
@@ -69,4 +131,12 @@
   letter-spacing: 0.08em;
   color: $text-primary-color;
   opacity: 0.5;
+}
+
+// 768+
+@media screen and (min-width: $tablet-768) {
+}
+
+// 1366+
+@media screen and (min-width: $desktop-1366) {
 }
