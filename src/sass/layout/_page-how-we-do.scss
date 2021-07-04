@@ -79,7 +79,9 @@ color: $text-second-color;
     &:hover,
     &:focus {
         background: $accent-color;
+ bugfix/page-header
         box-shadow: 0px 8px 26px $shadow-second-color;
+
       
     }
   }
