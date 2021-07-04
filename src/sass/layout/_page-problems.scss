@@ -9,6 +9,9 @@
     $white-color 72%,
     $white-color 100%
   );
+  @media screen and (min-width: $desktop-1366) {
+    padding: 100px 50px;
+  }
 }
 // <H2>
 .problems-title {
@@ -35,7 +38,10 @@
   box-shadow: -5px 8px 26px $shadow-primary-color;
 
   @media screen and (min-width: $tablet-768) {
-    padding: 30px 20px 10px;
+    padding: 30px 45px 10px 95px;
+  }
+  @media screen and (min-width: $desktop-1366) {
+    padding: 70px 110px 60px;
   }
 }
 // <LI>
@@ -46,7 +52,13 @@
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.08em;
-
+  // max 767
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  // min 768+
   @media screen and (min-width: $tablet-768) {
     display: inline-flex;
     align-items: center;
@@ -55,7 +67,9 @@
     align-items: flex-start;
 
     width: calc((100% - 2 * 30px) / 2);
-
+  }
+  // 768 - 1365
+  @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     &:nth-child(odd) {
       margin-right: 20px;
     }
@@ -63,14 +77,28 @@
       margin-bottom: 20px;
     }
   }
-  // media 1366+
+  // 1366+
   @media screen and (min-width: $desktop-1366) {
     width: calc((100% - 3 * 30px) / 3);
-  }
-}
-@media screen and (max-width: 767px) {
-  .problems-item:not(:last-child) {
-    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 1.4;
+    // all 3th [ 3, 6, 9, .... ]
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+    // all not 3th [ 1, 2, 4, 5, .... ]
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 40px;
+    }
+    // all not 3th last items
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+    // all 3th last items
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 }
 
