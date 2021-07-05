@@ -1,4 +1,4 @@
-.section-title {
+.section-about-title {
     margin: 40px 20px 20px 20px;
     font-weight: 800;
     font-size: 20px;
@@ -7,8 +7,40 @@
     color: $text-second-color;
 }
 
+.wrapper-about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    @media screen and (min-width: $tablet-768){
+        flex-direction: row;
+        
+    }
+}
+
+.section-img {
+    min-width: 243px;
+    min-height: 305px;
+
+    @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
+        min-width: 243px;
+        min-height: 305px;
+        margin-right: 40px;
+    }
+    
+    @media screen and (min-width: $desktop-1366) {
+        min-width: 530px;
+        min-height: 667px;    
+    }
+}
+
 .section-right-side {
     position: relative;
+
+    @media screen and (min-width: $desktop-1366){
+        margin-left: 30px;
+    }
+    
 }
 
 .teacher-name {
@@ -20,6 +52,10 @@
     line-height: 1.2;
     letter-spacing: 0.08em;
     color: $text-second-color;
+
+    @media screen and (min-width: $tablet-768) {
+        margin: 0 0 20px 0;
+    }
 }
 
 .expiriens::before {
@@ -30,7 +66,7 @@
     display: block;
     width: 17px;
     height: 14px;
-    background-image: url(../images/submit-icon.svg);
+    background-image: url(../images/compressed/about/submit-icon.svg);
 }
 
 .expiriens {
@@ -64,7 +100,6 @@
 }
 
 .certificate-link {
-    margin-bottom: 50px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
