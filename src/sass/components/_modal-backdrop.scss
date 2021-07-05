@@ -15,7 +15,7 @@
   opacity: 1;
   overflow-y: scroll;
 
-  transition: opacity $time250ms linear, visibility $time250ms linear;
+  transition: opacity $time250 linear, visibility $time250 linear;
 
   // Не видимий фон
   &.is-hidden {
