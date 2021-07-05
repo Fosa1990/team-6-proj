@@ -16,19 +16,43 @@
   background-color: $bg-second-color;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 10px;
 }
+
 .guarantee-accent {
   color: $accent-color;
 }
 
 .guarantee-list-item {
   height: 100px;
+  margin: 0 auto;
+  position: relative;
   color: $text-third-color;
   font-size: 12px;
   line-height: 1.67;
-
   padding-left: 28px;
   &:not(:last-child) {
     border-left: 1px dashed $text-primary-color;
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 20px;
+    background-image: url(../images/guarantee/light-mobile.svg);
+    position: absolute;
+    transform: translateX(-57%);
+    left: 0;
+    top: 0;
+  }
+}
+
+// 480+
+@media screen and (min-width: 480px) {
+  .guarantee-list-item {
+    height: 80px;
+  }
+  .guarantee-wrapper {
+    padding-left: 30px;
   }
 }
