@@ -2,19 +2,63 @@
   padding: 30px 20px 50px;
   background: $text-second-color;
   min-height: 507px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url('../images/demo.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+    url('../images/compressed/contacts/contacts-mobile-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* 2x и 0 - 767px */
 
-  @media screen and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .container-contacts {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url('../images/compressed/contacts/contacts-mobile-bg@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-contacts {
     padding-top: 50px;
     padding-bottom: 71px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url('../images/compressed/contacts/contacts-tablet-bg.jpg');
   }
-  @media screen and (min-width: 1366px) {
+}
+/* 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .container-contacts {
+    padding-top: 50px;
+    padding-bottom: 71px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url('../images/compressed/contacts/contacts-tablet-bg@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container-contacts {
+    min-height: 840px;
+    text-align: center;
     padding-top: 100px;
     padding-bottom: 62px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url('../images/compressed/contacts/contacts-desktop-bg.jpg');
+  }
+}
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+  (min-resolution: 192dpi) and (min-width: 1366px),
+  (min-resolution: 2dppx) and (min-width: 1366px) {
+  .container-contacts {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url('../images/compressed/contacts/contacts-desktop-bg@2x.jpg');
   }
 }
 .contacts-form {
@@ -22,7 +66,6 @@
   text-align: center;
 }
 .contacts-title {
-  font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 1.3;
