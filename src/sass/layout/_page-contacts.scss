@@ -2,8 +2,7 @@
   padding: 30px 20px 50px;
   background: $text-second-color;
   min-height: 507px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-    url('../images/compressed/contacts/contacts-mobile-bg.jpg');
+  background-image: url('../images/compressed/contacts/contacts-mobile-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,8 +16,7 @@
   .container-contacts {
     padding-top: 30px;
     padding-bottom: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url('../images/compressed/contacts/contacts-mobile-bg@2x.jpg');
+    background-image: url('../images/compressed/contacts/contacts-mobile-bg@2x.png');
   }
 }
 
@@ -26,8 +24,7 @@
   .container-contacts {
     padding-top: 50px;
     padding-bottom: 71px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url('../images/compressed/contacts/contacts-tablet-bg.jpg');
+    background-image: url('../images/compressed/contacts/contacts-tablet-bg.png');
   }
 }
 /* 2x и 768+ */
@@ -37,8 +34,7 @@
   .container-contacts {
     padding-top: 50px;
     padding-bottom: 71px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url('../images/compressed/contacts/contacts-tablet-bg@2x.jpg');
+    background-image: url('../images/compressed/contacts/contacts-tablet-bg@2x.png');
   }
 }
 
@@ -48,8 +44,7 @@
     text-align: center;
     padding-top: 100px;
     padding-bottom: 62px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url('../images/compressed/contacts/contacts-desktop-bg.jpg');
+    background-image: url('../images/compressed/contacts/contacts-desktop-bg.png');
   }
 }
 /* 2x и 1200+ */
@@ -57,8 +52,7 @@
   (min-resolution: 192dpi) and (min-width: 1366px),
   (min-resolution: 2dppx) and (min-width: 1366px) {
   .container-contacts {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url('../images/compressed/contacts/contacts-desktop-bg@2x.jpg');
+    background-image: url('../images/compressed/contacts/contacts-desktop-bg@2x.png');
   }
 }
 .contacts-form {
