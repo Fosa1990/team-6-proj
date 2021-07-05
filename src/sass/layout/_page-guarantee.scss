@@ -22,6 +22,10 @@
 .guarantee-accent {
   color: $accent-color;
 }
+.guarantee-list {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
 .guarantee-list-item {
   height: 100px;
@@ -44,6 +48,13 @@
     transform: translateX(-57%);
     left: 0;
     top: 0;
+  }
+}
+
+// 0-479
+@media screen and (max-width: 480px) {
+  .guarantee-wrapper-mobile {
+    background-color: $bg-second-color;
   }
 }
 
