@@ -89,9 +89,7 @@
   &:hover,
   &:focus {
     background: $accent-color;
-    box-shadow: 0 8px 26px $shadow-second-color;
-
-    
+    box-shadow: 0 8px 26px $shadow-second-color;  
   }
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
@@ -126,12 +124,40 @@
 .icon-how-we-do {
   fill: $accent-color;
   margin: 20px auto;
-  width: 48px;
-  height: 48px;
 
   @media screen and (min-width: $tablet-768) {
     margin: 40px auto;
   }
+}
+
+.icon-one {
+  width: 45px;
+  height: 48px;
+}
+
+.icon-two {
+  width: 48px;
+  height: 47px;
+}
+
+.icon-tree {
+  width: 68px;
+  height: 48px;
+}
+
+.icon-four {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-five {
+  width: 40px;
+  height: 48px;
+}
+
+.icon-six {
+  width: 54px;
+  height: 46px;
 }
 
 .card-title {
