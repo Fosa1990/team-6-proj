@@ -1,18 +1,20 @@
+.how-we-do-container {
+  margin-bottom: 50px;
+}
+
 .section-title {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
+  
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $text-second-color;
-}
-
-.icon-how-we-do {
-  margin: 30px auto;
-  width: 48px;
-  height: 48px;
 }
 
 .card-list {
@@ -91,7 +93,20 @@
   color: #ffffff;
 }
 
+.card-list__link:focus .card-title::after,
+.card-list__link:hover .card-title::after {
+  color: #ffffff;
+}
+
+.icon-how-we-do {
+  fill: $accent-color;
+  margin: 20px auto;
+  width: 48px;
+  height: 48px;
+}
+
 .card-title {
+  margin: auto 10px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -121,7 +136,20 @@
   }
 }
 
+.card-title::after {
+  content: '\2015';
+  display: block;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+
+  color: $accent-color;
+}
+
 .card-text {
+  margin: auto 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
