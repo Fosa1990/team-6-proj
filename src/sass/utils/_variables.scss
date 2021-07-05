@@ -19,14 +19,16 @@ $shadow-second-color: rgba(0, 0, 0, 0.1);
 $shadow-third-color: rgba(0, 0, 0, 0.25);
 
 // Times for transformations
-$time0ms: 0ms;
-$time250ms: 250ms;
-$time500ms: 500ms;
-$time750ms: 750ms;
-$time1000ms: 1000ms;
-$time1250ms: 1250ms;
-$time1500ms: 1500ms;
-$time1750ms: 1750ms;
-$time2000ms: 2000ms;
-$time2250ms: 2250ms;
-$time2500ms: 2500ms;
+$time0: 0ms;
+$time250: 250ms;
+$time500: 500ms;
+$time750: 750ms;
+$time1000: 1000ms;
+$time1250: 1250ms;
+$time1500: 1500ms;
+$time1750: 1750ms;
+$time2000: 2000ms;
+$time2250: 2250ms;
+$time2500: 2500ms;
+// Cubic
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
