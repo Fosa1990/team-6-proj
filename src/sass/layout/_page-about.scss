@@ -93,7 +93,7 @@
 }
 
 .expirience {
-    padding-right: 120px;
+    
     padding-left: 25px;
     padding-bottom: 15px;
     font-weight: 600;
@@ -111,6 +111,7 @@
     }
 
     @media screen and (min-width: $desktop-1366) {
+        padding-right: 120px;
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
@@ -133,7 +134,7 @@
 }
 
 .description {
-    padding-right: 130px;
+    
     font-weight: 500;
     font-size: 12px;
     line-height: 2.17;
@@ -146,6 +147,7 @@
     }
 
     @media screen and (min-width: $desktop-1366) {
+        padding-right: 130px;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.56;
