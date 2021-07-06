@@ -9,6 +9,9 @@
   margin-left: 50px;
 }
 .header-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   cursor: pointer;
 
   &:hover {
@@ -36,6 +39,12 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  @media screen and (min-width: $desktop-1366) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-right: 144px;
+  }
 }
 .header-icon {
   margin-left: auto;
@@ -57,10 +66,6 @@
   @media screen and (min-width: $tablet-768) {
     width: 128px;
     height: 45px;
-  }
-
-  @media screen and (min-width: $desktop-1366) {
-    margin-right: 144px;
   }
 }
 .header-flex .button-consultation {
