@@ -4,8 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 14px 46px 14px 46px;
-}
-.button {
+
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -15,4 +14,17 @@
   background: $accent-color;
   cursor: pointer;
   border: 0;
+}
+.button-consultation {
+  display: none;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $accent-color;
+  background: rgba(118, 69, 69, 0);
+  cursor: pointer;
+  border: 2px solid $accent-color;
 }
