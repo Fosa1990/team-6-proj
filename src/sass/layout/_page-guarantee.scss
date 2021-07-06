@@ -12,19 +12,15 @@
   margin-bottom: 30px;
 }
 
-.guarantee-wrapper {
-  background-color: $bg-second-color;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-}
-
 .guarantee-accent {
   color: $accent-color;
 }
+.guarantee-list {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
 .guarantee-list-item {
-  height: 100px;
   margin: 0 auto;
   position: relative;
   color: $text-third-color;
@@ -32,6 +28,7 @@
   line-height: 1.67;
   padding-left: 28px;
   &:not(:last-child) {
+    height: 100px;
     border-left: 1px dashed $text-primary-color;
   }
   &::before {
@@ -47,12 +44,50 @@
   }
 }
 
+// 0-767
+@media screen and (max-width: 767px) {
+  .guarantee-wrapper-mobile {
+    background-color: $bg-second-color;
+  }
+}
+
 // 480+
 @media screen and (min-width: 480px) {
-  .guarantee-list-item {
+  .guarantee-list-item:not(:last-child) {
     height: 80px;
   }
   .guarantee-wrapper {
     padding-left: 30px;
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .guarantee-list {
+    background-color: $bg-second-color;
+    padding: 30px 50px 30px 80px;
+  }
+  .guarantee-list-item:not(:last-child) {
+    height: 58px;
+  }
+}
+
+// 1366+
+@media screen and (min-width: 1366px) {
+  .guarantee-title {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+  .guarantee {
+    padding-top: 100px;
+  }
+  .guarantee-list {
+    padding: 50px 112px 45px 112px;
+  }
+  .guarantee-list-item {
+    font-size: 20px;
+  }
+  .guarantee-list-item:not(:last-child) {
+    height: 80px;
   }
 }

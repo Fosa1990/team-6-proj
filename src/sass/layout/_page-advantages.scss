@@ -1,14 +1,26 @@
 // <Section>
 .advantages {
-  padding-bottom: 50px;
+
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  @media screen and (min-width: $tablet-768) {
+    padding-top: 45;
+  }
+  @media screen and (min-width: $desktop-1366) {
+    padding-top: 95;
+    padding-bottom: 130px;
+  }
 }
 //  <Ul>
 .advantages-list {
   @media screen and (min-width: $tablet-768) {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
   }
 }
+
 // <Li>
 .advantages-item {
   display: flex;
@@ -37,6 +49,7 @@
   @media screen and (min-width: $desktop-1366) {
     font-size: 20px;
     max-width: 370px;
+    min-height: 102px;
   }
 }
 .advantages-item:not(:last-child) {

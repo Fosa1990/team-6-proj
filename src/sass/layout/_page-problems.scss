@@ -8,8 +8,20 @@
     $white-color 72%,
     $white-color 100%
   );
+
+  @media screen and (min-width: $tablet-768) {
+    padding-top: 60px;
+
+    background-image: linear-gradient(
+      to bottom,
+      $text-second-color 66%,
+      $white-color 66%,
+      $white-color 100%
+    );
+  }
+
   @media screen and (min-width: $desktop-1366) {
-    padding: 100px 50px;
+    padding: 100px 50px 130px;
 
     background-image: linear-gradient(
         to bottom,
