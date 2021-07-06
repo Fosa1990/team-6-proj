@@ -13,8 +13,8 @@
   background-image: url('../images/compressed/hero/background/png/hero-wave-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 50%;
-  background-position-y: bottom;
+  background-position-x: 10%;
+  background-position-y: 100%;
   margin: 0 auto;
 
   @media (min-device-pixel-ratio: 2),
@@ -36,13 +36,13 @@
   }
 
   @media screen and (min-width: $desktop-1366) {
-    background-image: url('../images/compressed/hero/background/png/hero-wave-desktop.png');
+    background-image: url('../images/compressed/hero/background/png/hero-wave-deskstop.png');
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/compressed/hero/background/png/hero-wave-deskstop@2x.png');
+      background-image: url('../images/compressed/hero/background/png/hero-wave-desktop@2x.png');
     }
   }
 }
