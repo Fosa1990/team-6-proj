@@ -5,6 +5,29 @@
   display: flex;
   align-items: center;
 }
+.header-navigation .header-link + .header-link {
+  margin-left: 50px;
+}
+.header-link {
+  cursor: pointer;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+.header-navigation {
+  display: none;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $text-primary-color;
+
+  @media screen and (min-width: $desktop-1366) {
+    display: flex;
+  }
+}
 .header-logo-icon {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -34,6 +57,10 @@
   @media screen and (min-width: $tablet-768) {
     width: 128px;
     height: 45px;
+  }
+
+  @media screen and (min-width: $desktop-1366) {
+    margin-right: 144px;
   }
 }
 .header-flex .button-consultation {

@@ -51,7 +51,7 @@
   margin-bottom: 55px;
 
   @media screen and (min-width: $tablet-768) {
-    margin-bottom: 140px;
+    margin-bottom: 100px;
     flex-direction: column;
     width: 330px;
   }
@@ -85,8 +85,9 @@
 }
 .hero-davis {
   margin-bottom: 50px;
-}
-.hero-davis {
+  display: flex;
+  flex-direction: column;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.57;
@@ -105,7 +106,19 @@
   color: $text-second-color;
 }
 .hero-third_davis {
+  display: none;
+  color: $text-second-color;
+
+  @media screen and (min-width: $desktop-1366) {
+    display: inline;
+  }
+}
+.hero-fourth_davis {
   color: $accent-color;
+
+  @media screen and (min-width: $desktop-1366) {
+    display: none;
+  }
 }
 .container .hero-button {
   @media screen and (min-width: $tablet-768) {
