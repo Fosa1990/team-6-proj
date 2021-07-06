@@ -1,22 +1,49 @@
+.header {
+  position: relative;
+}
 .header-flex {
   display: flex;
   align-items: center;
+}
+.header-logo-icon {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: $tablet-768) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 .header-icon {
   margin-left: auto;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: $tablet-768) {
+    margin-left: 40px;
+  }
+
+  @media screen and (min-width: $desktop-1366) {
+    display: none;
+  }
 }
 .header-logo {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  width: 80px;
+  height: 30px;
+
+  @media screen and (min-width: $tablet-768) {
+    width: 128px;
+    height: 45px;
+  }
 }
-.header-button {
-  margin-bottom: 30px;
-}
-.hero-img {
-  margin-left: auto;
-  margin-right: auto;
+.header-flex .button-consultation {
+  @media screen and (min-width: $tablet-768) {
+    display: block;
+    padding: 15px 10px 15px 10px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop-1366) {
+    padding: 26px 50px 26px 50px;
+  }
 }
