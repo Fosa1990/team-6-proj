@@ -1296,11 +1296,6 @@ ul {
   color: #ff6b09;
 }
 
-.guarantee-list {
-  padding-top: 50px;
-  padding-bottom: 30px;
-}
-
 .guarantee-list-item {
   height: 100px;
   margin: 0 auto;
@@ -1326,12 +1321,6 @@ ul {
           transform: translateX(-57%);
   left: 0;
   top: 0;
-}
-
-@media screen and (max-width: 480px) {
-  .guarantee-wrapper-mobile {
-    background-color: #f1f1f1;
-  }
 }
 
 @media screen and (min-width: 480px) {
