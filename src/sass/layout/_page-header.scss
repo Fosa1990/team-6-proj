@@ -1,5 +1,13 @@
 .header {
   position: relative;
+
+  @media screen and (min-width: $tablet-768) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop-1366) {
+    padding-bottom: 55px;
+  }
 }
 .header-flex {
   display: flex;

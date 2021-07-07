@@ -46,6 +46,37 @@
     background-color: $accent-color;
   }
 }
+.btn {
+  width: 260px;
+  height: 48px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: $accent-color;
+
+  outline: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  color: $white-color;
+  transition: color $time250 $cubic;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  @media screen and (min-width: $desktop-1366) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 354px;
+    height: 70px;
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+  }
+}
 
 .button-animation {
   transform: scale(1);
