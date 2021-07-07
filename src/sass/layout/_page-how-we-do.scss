@@ -91,7 +91,7 @@
   transform: scale(1);
 
   transition: box-shadow $time250 $cubic, transform $time1000 $cubic,
-    background-color $time500 $cubic;
+    background-color $time500 $cubic, border-radius $time1000 $cubic;
 
   &:hover,
   &:focus {
@@ -99,7 +99,7 @@
     box-shadow: 0 8px 26px $shadow-second-color;
 
     transform: scale(1.05);
-
+    border-radius: 20px;
   }
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
@@ -119,6 +119,7 @@
 .card-list__link:focus .icon-how-we-do,
 .card-list__link:hover .icon-how-we-do {
   fill: $white-color;
+  transform: rotateY(180deg);
 }
 
 .card-list__link:focus .card-title,
@@ -140,7 +141,7 @@
   fill: $accent-color;
   margin: 20px auto;
 
-  transition: fill $time250 $cubic;
+  transition: fill $time250 $cubic, transform $time1000 $cubic;
 
   @media screen and (min-width: $tablet-768) {
     margin: 40px auto;
