@@ -3,11 +3,11 @@
     background-image: linear-gradient(to bottom, $white-color 76%, $text-second-color 24%);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     background-image: linear-gradient(to bottom, $white-color 65%, $text-second-color 35%);
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: $desktop-1366) {
     background-image: linear-gradient(to bottom, $white-color 69%, $text-second-color 31%);
   }
 }
@@ -19,12 +19,12 @@
     flex-direction: column;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     flex-direction: row;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: $desktop-1366) {
     padding-top: 52px;
     padding-bottom: 52px;
   }
@@ -33,13 +33,13 @@
   margin-bottom: 21px;
   text-align: center;
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: $desktop-1366) {
     margin-right: 290px;
   }
 }
 .fotter-logo-link {
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     display: flex;
   }
 }
@@ -47,7 +47,7 @@
   width: 80px;
   height: 29px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     width: 128px;
     height: 45px;
   }
@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     flex-direction: row;
     align-items: center;
     margin-left: auto;
@@ -69,19 +69,24 @@
   text-align: center;
   justify-content: center;
   font-weight: 600;
+  font-size: inherit;
   line-height: 1.21;
   letter-spacing: 0.08em;
   text-decoration: none;
   color: $text-second-color;
+  .link:hover &,
+  .link:focus & {
+    transform: rotateZ(360deg);
+  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     font-size: 20px;
     margin-right: 50px;
   }
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: $desktop-1366) {
     font-size: 30px;
     margin-right: 40px;
   }
@@ -91,12 +96,14 @@
   height: 20px;
   fill: $accent-color;
   margin-right: 10px;
+  transform: rotateZ(0deg);
+  transition: transform $time1250 var$cubic;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     width: 24px;
     height: 24px;
   }
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: $desktop-1366) {
     width: 30px;
     height: 30px;
     margin-right: 15px;
@@ -107,7 +114,7 @@
   height: 40px;
   background-image: url('../images/compressed/footer/icon-instagram.svg');
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-768) {
     position: relative;
 
     &::after {
@@ -125,7 +132,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 2;
   color: $text-primary-color;
 
@@ -136,7 +143,7 @@
 .fotter-bottom-text::before {
   content: '\0040';
   font-weight: 500;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 2;
   text-align: center;
   color: $text-primary-color;
