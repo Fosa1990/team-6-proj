@@ -80,10 +80,174 @@
 
 .read-more-trigger {
   cursor: pointer;
-  line-height: 2;
   font-size: 12px;
   line-height: 1.67;
   text-align: center;
   text-decoration-line: underline;
   color: $accent-color;
+}
+.reviewer-item {
+  width: 54px;
+  height: 54px;
+}
+
+.item-1 {
+  background: url(../images/reviews/item-1.jpg);
+}
+
+.item-2 {
+  background: url(../images/reviews/item-2.jpg);
+}
+
+.item-3 {
+  background: url(../images/reviews/item-3.jpg);
+}
+
+.item-4 {
+  background: url(../images/reviews/item-4.jpg);
+}
+
+.item-5 {
+  background: url(../images/reviews/item-5.jpg);
+}
+
+.item-6 {
+  background: url(../images/reviews/item-6.jpg);
+}
+
+.item-7 {
+  background: url(../images/reviews/item-7.jpg);
+}
+
+.reviewer-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 62px; 
+}
+
+@media screen and (max-width: 767px) {
+  .item-4, .item-5, .item-6, .item-7 {
+    display: none;
+  }
+  .reviewer-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .reviewer-list {
+    position: relative;
+
+    &::before{
+      content: '';
+      display: block;
+      width: 25px;
+      height: 15px;
+      background-image: url(../images/reviews/right-arrow.svg);
+      position: absolute;
+      transform: translateY(100%);
+      left: 0;
+      top: 0;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 15px;
+      background-image: url(../images/reviews/left-arrow.svg);
+      position: absolute;
+      transform: translateY(100%);
+      right: 0px;
+      top: 0;
+    }
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviewer-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .reviewer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .reviewer-text-wrapper {
+    width: 60%;
+  }
+  .reviews-img-wrapper {
+    width: 30%;
+  }
+  .reviews-title {
+    font-size: 26px;
+    margin-bottom: 70px;
+  }
+  .reviewer-name {
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .reviewer-shcool {
+    text-align: start;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .reviewer-feedback {
+    text-align: start;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .reviewer {
+    position: relative;
+    &::before{
+      content: '';
+      display: block;
+      width: 25px;
+      height: 15px;
+      background-image: url(../images/reviews/right-arrow.svg);
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 15px;
+      background-image: url(../images/reviews/left-arrow.svg);
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+  .reviewer-list{
+    margin-top: 70px;
+  }
+
+}
+
+@media screen and (min-width: 1366px) {
+  .reviews {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .reviewer {
+    &::before{
+      left: -100px;
+    }
+    &::after {
+      right: -100px;
+ 
+    }
+  }
+  .read-more-trigger {
+    text-align: start;
+  }
+  .reviews-title {
+    font-size: 46px;
+    margin-bottom: 100px;
+  }
+  .reviewer-shcool {
+    margin-bottom: 10px;
+  }
 }
