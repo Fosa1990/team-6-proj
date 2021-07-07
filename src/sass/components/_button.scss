@@ -81,8 +81,8 @@
 .button-animation {
   transform: scale(1);
   border: 2px solid $accent-color;
-  transition: transform $time750 $cubic, border-radius $time750 $cubic, box-shadow $time250 $cubic,
-    color $time500 $cubic $time500, background-color $time250 $cubic $time500;
+  transition: transform $time500 $cubic, border-radius $time500 $cubic, box-shadow $time250 $cubic,
+    color $time500 $cubic $time250, background-color $time250 $cubic $time250;
 
   &:hover,
   &:focus {
