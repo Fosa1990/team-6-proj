@@ -1,0 +1,111 @@
+<!--  Modal Window  -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <!--  Форма  -->
+    <form class="form" autocomplete="off">
+      <p class="form__description">Leave your details, we will call you back</p>
+
+      <!--  Имя  -->
+      <label class="form__field">
+        <input
+          class="form__input"
+          type="name"
+          name="name"
+          placeholder="Anatoliy"
+          title="Please enter your name"
+          minlength="2"
+          maxlength="30"
+          required
+        /><span class="form__label">Name</span>
+        <svg class="form__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-person"></use>
+        </svg>
+      </label>
+
+      <!--  Телефон  -->
+      <label class="form__field">
+        <input
+          class="form__input"
+          type="tel"
+          name="tel"
+          placeholder="+38 000 111 22 33"
+          title="Enter the phone number in the format +380 .. or 093 ..."
+          minlength="9"
+          maxlength="13"
+          required
+        /><span class="form__label">Telephone</span>
+        <svg class="form__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-phone"></use>
+        </svg>
+      </label>
+
+      <!--  Почта  -->
+      <label class="form__field">
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          placeholder="example@mail.com"
+          title="Enter mailbox"
+          required
+        /><span class="form__label">Mailbox</span>
+        <svg class="form__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-email"></use>
+        </svg>
+      </label>
+
+      <!--  Комментарий  -->
+      <label class="form__field">
+        <textarea
+          class="form__comment"
+          type="textarea"
+          name="textarea"
+          rows="8"
+          placeholder="Введите текст"
+          title="Тут можно написать свой комментарий"
+          maxlength="300"
+        ></textarea
+        ><span class="form__label-comment">Comment</span>
+      </label>
+
+      <!--  Условия договора  -->
+      <label class="form__policy">
+        <input
+          class="form__checkbox"
+          type="checkbox"
+          name="policy"
+          value="accept policy"
+          required
+        />
+        <span class="form__icon-checkbox"></span>
+        <span class="form__checkbox-policy"
+          >I agree with the newsletter and accept
+          <a class="form__checkbox-link" href="./index.html">Agreement conditions</a></span
+        >
+      </label>
+
+      <!--  Кнопка Отправить Форму  -->
+      <div class="button-submit">
+        <button
+          class="button button-submit__submit-button"
+          type="submit"
+          aria-label="Submit the inputed form"
+        >
+          Send
+        </button>
+      </div>
+
+      <!--  Кнопка закрыть модалку  -->
+      <button
+        class="modal-close"
+        data-modal-close
+        type="button"
+        aria-label="Close subscription menu"
+      >
+        <svg class="modal-close__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
