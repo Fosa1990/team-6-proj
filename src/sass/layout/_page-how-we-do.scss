@@ -97,7 +97,9 @@
   &:focus {
     background: $accent-color;
     box-shadow: 0 8px 26px $shadow-second-color;
+
     transform: scale(1.05);
+
   }
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {

@@ -14,6 +14,12 @@
   background: $accent-color;
   cursor: pointer;
   border: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $white-color;
+  }
 }
 .button-consultation {
   display: none;
@@ -27,4 +33,31 @@
   background: rgba(118, 69, 69, 0);
   cursor: pointer;
   border: 2px solid $accent-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color;
+  }
+}
+
+.button-animation {
+  transform: scale(1);
+  border: 1px solid $accent-color;
+  transition: transform $time750 $cubic, border-radius $time750 $cubic, box-shadow $time250 $cubic,
+    color $time500 $cubic $time500, background-color $time250 $cubic $time500;
+
+  &:hover,
+  &:focus {
+    border-radius: 20px;
+    color: $black-color;
+    box-shadow: $shadow-primary;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    color: $black-color;
+    box-shadow: $shadow-primary;
+    transform: translateY(4px) scale(1.05);
+  }
 }
