@@ -124,14 +124,22 @@
   }
 }
 .container .hero-button {
+  width: 260px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 55px;
+  padding: 14px 43px 14px 43px;
 
   @media screen and (min-width: $tablet-768) {
     margin-bottom: 0;
     margin-left: 0;
+    margin-right: 0;
   }
 
   @media screen and (min-width: $desktop-1366) {
+    width: 354px;
+    height: 70px;
     padding: 26px 70px 26px 70px;
 
     font-size: 14px;
