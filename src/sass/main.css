@@ -120,6 +120,10 @@ ul {
   background-color: #ffffff;
 }
 
+.button:hover, .button:focus, .button:active {
+  background-color: #ffffff;
+}
+
 .button-consultation {
   display: none;
   font-weight: 700;
