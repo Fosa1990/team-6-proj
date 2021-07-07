@@ -4,6 +4,9 @@
 // Named colors
 $white-color: #ffffff;
 $black-color: #000000;
+$color-success: #008000;
+$color-warning: #ffa500;
+$color-error: #ff0000;
 // colors Text
 $text-primary-color: #b9b9b9;
 $text-second-color: #111518;
@@ -17,6 +20,9 @@ $bg-second-color: #f1f1f1;
 $shadow-primary-color: rgba(0, 0, 0, 0.04);
 $shadow-second-color: rgba(0, 0, 0, 0.1);
 $shadow-third-color: rgba(0, 0, 0, 0.25);
+// Full shadows
+$shadow-primary: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 
 // Times for transformations
 $time0: 0ms;
