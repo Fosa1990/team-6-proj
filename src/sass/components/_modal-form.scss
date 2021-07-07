@@ -12,6 +12,8 @@
 
   margin: 0 auto;
   padding: 40px;
+
+  background-color: $bg-second-color;
 }
 
 //  <P> Заголовок формы
@@ -42,14 +44,18 @@
   &:not(:last-child) {
     margin-bottom: 28px;
   }
-
+  // &:not(:placeholder-shown):required:valid {
+  //   border: 2px solid $color-success;
+  // }
+  // &:not(:placeholder-shown):required:invalid {
+  //   border: 2px solid $color-error;
+  // }
   @media screen and (min-width: $tablet-768) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
 }
-
 //  <Input> Поле ввода
 .form__input {
   display: block;
@@ -57,7 +63,7 @@
   height: 40px;
   padding: 12px 12px 12px 42px;
 
-  color: $text-primary-color;
+  color: $accent-color;
 
   box-sizing: border-box;
   border: 1px solid $accent-color;
@@ -102,7 +108,7 @@
   .form__field:focus-within > &,
   .form__input:not(:placeholder-shown) + & {
     color: $accent-color;
-    transform: translateY(-35px) translateX(-40px);
+    transform: translateY(-35px) translateX(-35px);
   }
   @media screen and (max-width: 677px) {
     .form__field:focus-within > &,
@@ -191,7 +197,7 @@
 .form__icon-checkbox {
   display: inline-block;
   width: 20px;
-  height: 16px;
+  height: 20px;
   margin-right: 8px;
   border: 2px solid $checkbox-border-color;
   border-radius: 4px;
@@ -214,6 +220,8 @@
 
 //  <Span> Текст
 .form__checkbox-policy {
+  display: inline-grid;
+
   font-size: 12px;
   line-height: 1.166;
 
@@ -266,7 +274,7 @@
 // Кнопки Закрыть Модальное Окно
 // <Button> Кнопка закрыть
 .modal-close {
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
