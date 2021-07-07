@@ -1,1 +1,88 @@
 //  Модальное окно
+.modal {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+// 320+
+@media screen and (min-width: $mobile-320) {
+  .modal {
+    min-width: 320px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+// 768+
+@media screen and (min-width: $tablet-768) {
+  .modal {
+    width: 768px;
+
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+// 1366+
+@media screen and (min-width: $desktop-1366) {
+  .modal {
+    width: 1366px;
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+}
+.modal-flex {
+  display: flex;
+  align-items: center;
+}
+.modal-logo {
+  width: 80px;
+  height: 30px;
+
+  fill: $white-color;
+
+  @media screen and (min-width: $tablet-768) {
+    width: 128px;
+    height: 45px;
+  }
+}
+.modal-menu {
+  margin-left: auto;
+}
+.modal-logo-icon {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: $tablet-768) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.modal-close-icon {
+  fill: $white-color;
+}
+.modal-navigation {
+  padding-top: 20px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: $white-color;
+
+  @media screen and (min-width: $tablet-768) {
+    font-size: 26px;
+    line-height: 47px;
+
+    width: 332px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.modal-link:hover {
+  cursor: pointer;
+
+  color: $accent-color;
+}
