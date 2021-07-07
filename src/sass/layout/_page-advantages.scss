@@ -1,13 +1,8 @@
 // <Section>
 .advantages {
-  padding-top: 30px;
   padding-bottom: 45px;
 
-  @media screen and (min-width: $tablet-768) {
-    padding-top: 45px;
-  }
   @media screen and (min-width: $desktop-1366) {
-    padding-top: 95px;
     padding-bottom: 130px;
   }
 }
