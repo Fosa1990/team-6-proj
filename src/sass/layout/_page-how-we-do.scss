@@ -6,7 +6,7 @@
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
-  
+
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -47,7 +47,6 @@
   @media screen and (min-width: $tablet-768) {
     flex-direction: row;
   }
-  
 }
 
 .card-list__item {
@@ -58,7 +57,7 @@
   margin-left: 20px;
   margin-top: 20px;
 
-  max-width: 280px;
+  min-width: 280px;
   max-height: 280px;
 
   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.1);
@@ -89,7 +88,7 @@
   &:hover,
   &:focus {
     background: $accent-color;
-    box-shadow: 0 8px 26px $shadow-second-color;  
+    box-shadow: 0 8px 26px $shadow-second-color;
   }
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
