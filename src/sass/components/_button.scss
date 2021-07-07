@@ -18,11 +18,11 @@
   cursor: pointer;
 
   // uncomment for animations
-  // &:hover,
-  // &:focus,
-  // &:active {
-  //   background-color: $white-color;
-  // }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $white-color;
+  }
 }
 .button-consultation {
   display: none;
@@ -40,11 +40,11 @@
   cursor: pointer;
 
   // uncomment for animations
-  // &:hover,
-  // &:focus,
-  // &:active {
-  //   background-color: $accent-color;
-  // }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color;
+  }
 }
 .btn {
   width: 260px;
