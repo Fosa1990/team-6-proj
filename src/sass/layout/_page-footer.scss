@@ -72,16 +72,13 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+
   font-weight: 600;
   font-size: inherit;
   line-height: 1.21;
   letter-spacing: 0.08em;
   text-decoration: none;
   color: $text-second-color;
-  .link:hover &,
-  .link:focus & {
-    transform: rotateZ(360deg);
-  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
@@ -98,10 +95,12 @@
 .footer-tel {
   width: 20px;
   height: 20px;
-  fill: $accent-color;
+
   margin-right: 10px;
+
+  fill: $accent-color;
   transform: rotateZ(0deg);
-  transition: transform $time1250 var$cubic;
+  transition: transform $time1250 $cubic;
 
   @media screen and (min-width: $tablet-768) {
     width: 24px;
@@ -111,6 +110,10 @@
     width: 30px;
     height: 30px;
     margin-right: 15px;
+  }
+  .footer-tel-link:hover &,
+  .footer-tel-link:focus & {
+    transform: rotateY(360deg);
   }
 }
 .footer-social-link {
