@@ -3,14 +3,13 @@
 }
 
 .section-title {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.3;
-
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -36,11 +35,11 @@
 }
 
 .card-list {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 
-  display: flex;
-  flex-wrap: wrap;
   margin-left: -20px;
   margin-top: -20px;
 
@@ -50,15 +49,14 @@
 }
 
 .card-list__item {
+  display: flex;
   flex-direction: column;
   align-items: center;
 
-  display: flex;
-  margin-left: 20px;
-  margin-top: 20px;
-
   min-width: 280px;
   max-height: 280px;
+  margin-left: 20px;
+  margin-top: 20px;
 
   transform: scale(1);
   transition: transform $time1000 $cubic;
@@ -91,7 +89,7 @@
   transform: scale(1);
 
   transition: box-shadow $time250 $cubic, transform $time1000 $cubic,
-    background-color $time500 $cubic;
+    background-color $time500 $cubic, border-radius $time1000 $cubic;
 
   &:hover,
   &:focus {
@@ -99,7 +97,7 @@
     box-shadow: 0 8px 26px $shadow-second-color;
 
     transform: scale(1.05);
-
+    border-radius: 20px;
   }
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
@@ -119,6 +117,7 @@
 .card-list__link:focus .icon-how-we-do,
 .card-list__link:hover .icon-how-we-do {
   fill: $white-color;
+  transform: rotateY(180deg);
 }
 
 .card-list__link:focus .card-title,
@@ -140,7 +139,7 @@
   fill: $accent-color;
   margin: 20px auto;
 
-  transition: fill $time250 $cubic;
+  transition: fill $time250 $cubic, transform $time1000 $cubic;
 
   @media screen and (min-width: $tablet-768) {
     margin: 40px auto;
@@ -179,7 +178,7 @@
 
 .card-title {
   margin: 0 10px;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
@@ -191,6 +190,7 @@
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     flex-direction: row;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.4;
@@ -201,6 +201,7 @@
 
   @media screen and (min-width: $desktop-1366) {
     flex-direction: row;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.4;
@@ -230,6 +231,7 @@
 
 .card-text {
   margin: 0 10px;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -243,6 +245,7 @@
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     flex-direction: row;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 2.33;
@@ -252,6 +255,7 @@
 
   @media screen and (min-width: $desktop-1366) {
     flex-direction: row;
+
     font-weight: 500;
     font-size: 18px;
     line-height: 1.56;
