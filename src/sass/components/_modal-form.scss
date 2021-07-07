@@ -1,0 +1,255 @@
+//  ===== Форма модального окна =====
+//  <Form> Форма
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  padding: 40px;
+}
+
+//  <P> Заголовок формы
+.form__description {
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: $black-color;
+
+  @media screen and (min-width: $desktop-1366) {
+    line-height: 1.15;
+  }
+}
+
+//  <Label> Контейнер поля ввода
+.form__field {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: $tablet-768) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//  <Input> Поле ввода
+.form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 12px 12px 12px 42px;
+
+  color: $text-primary-color;
+
+  box-sizing: border-box;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px $shadow-third-color;
+
+  transition: border $time250 $cubic;
+
+  outline: none;
+
+  //  <Input> Анимация рамки при фокусе
+  .form__field:focus-within > & {
+    border: 1px solid $accent-color;
+  }
+
+  //  Исчезновения текста плейсхолдера
+  &::placeholder {
+    color: transparent;
+    transition: color $time250 $cubic;
+  }
+
+  .form__field:focus-within &::placeholder {
+    color: $place-holder-color;
+  }
+}
+
+//  <Span> Описание поля
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $text-primary-color;
+
+  transform: translate(0, -50%);
+  transition: transform $time250 linear, color $time250 $cubic;
+
+  //  <Span> Анимация текста при фокусе поля ввода
+  .form__field:focus-within > &,
+  .form__input:not(:placeholder-shown) + & {
+    color: $accent-color;
+    transform: translateY(-35px) translateX(-40px);
+  }
+  @media screen and (max-width: 677px) {
+    .form__field:focus-within > &,
+    .form__input:not(:placeholder-shown) + & {
+      transform: translateY(-40px) translateX(-33px);
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .form__field:focus-within > &,
+    .form__input:not(:placeholder-shown) + & {
+      transform: translateY(-35px) translateX(-33px);
+    }
+  }
+}
+
+//  <Textarea> Полле воода комментария
+.form__comment {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+
+  box-sizing: border-box;
+  border: 1px solid $dark-light-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px $shadow-third-color;
+
+  transition: color $time250 $cubic, border-color $time250 $cubic;
+
+  outline: none;
+
+  .form__field:focus-within & {
+    color: var(--secondary-text-color);
+    border-color: $accent-color;
+  }
+  &::placeholder {
+    color: $place-holder-color;
+  }
+}
+
+//  <Span> Описание поля коментария
+.form__label-comment {
+  position: absolute;
+  top: -12%;
+  left: 0;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $text-primary-color;
+
+  transition: transform $time1000 $cubic, color $time250 $cubic;
+
+  //  <Span> Текст Коментария
+  .form__field:focus-within > &,
+  .form__input:not(:placeholder-shown) + & {
+    color: $accent-color;
+    transform: translateX(225%);
+  }
+  @media screen and (max-width: 1199px) {
+    .form__field:focus-within > &,
+    .form__input:not(:placeholder-shown) + & {
+      transform: translateX(180%);
+    }
+  }
+}
+
+//  <Label> Условия договора
+.form__policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+//  <Input> Скртыть стандарртный чекбокс
+.form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+//  <Span> Иконка-чекбокс
+.form__icon-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 2px solid $checkbox-border-color;
+  border-radius: 4px;
+  cursor: pointer;
+
+  //  <form__icon-checkbox> Заменят чекбокс на иконку при клике
+  .form__checkbox:checked ~ & {
+    border-color: transparent;
+    background-color: $accent-color;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+  //  <form__icon-checkbox> Фокус на чекбос (Таб)
+  .form__checkbox:focus + & {
+    border-color: $accent-color;
+  }
+}
+
+//  <Span> Текст
+.form__checkbox-policy {
+  font-size: 12px;
+  line-height: 1.166;
+
+  color: $text-primary-color;
+
+  @media screen and (min-width: $desktop-1366) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+//  <SVG> form__icon
+.form__icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 3%;
+
+  transform: translateY(-50%);
+
+  transition: fill $time250 $cubic;
+
+  .form__field:focus-within > & {
+    fill: $accent-color;
+  }
+}
+
+//  <a> Ссылка "Условия договора"
+.form__checkbox-link {
+  color: $accent-color;
+  text-decoration: underline;
+  outline: none;
+
+  &:focus {
+    outline: 1px solid $accent-color;
+  }
+}
+
+//  <Div> Контейнер кнопки отправить Форму
+.button-submit {
+  display: flex;
+  justify-content: center;
+  //  <Button> Кнопка Отправить форму
+  & .button-submit__submit-button {
+    box-shadow: 0px 4px 4px $shadow-third-color;
+  }
+}
