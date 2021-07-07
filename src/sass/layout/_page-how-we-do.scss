@@ -60,7 +60,10 @@
   min-width: 280px;
   max-height: 280px;
 
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: transform $time1000 $cubic;
+
+  box-shadow: 0 8px 26px $shadow-second-color;
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     width: calc((100% - 2 * 20px) / 2);
@@ -85,10 +88,18 @@
   flex-direction: column;
   color: $text-second-color;
 
+  transform: scale(1);
+
+  transition: box-shadow $time250 $cubic, transform $time1000 $cubic,
+    background-color $time500 $cubic;
+
   &:hover,
   &:focus {
     background: $accent-color;
     box-shadow: 0 8px 26px $shadow-second-color;
+
+    transform: scale(1.05);
+
   }
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
@@ -100,29 +111,36 @@
   }
 }
 
+.card-list__link:hover .card-list__item,
+.card-list__link:focus .card-list__item {
+  transform: scale(1.05);
+}
+
 .card-list__link:focus .icon-how-we-do,
 .card-list__link:hover .icon-how-we-do {
-  fill: #ffffff;
+  fill: $white-color;
 }
 
 .card-list__link:focus .card-title,
 .card-list__link:hover .card-title {
-  color: #ffffff;
+  color: $white-color;
 }
 
 .card-list__link:focus .card-text,
 .card-list__link:hover .card-text {
-  color: #ffffff;
+  color: $white-color;
 }
 
 .card-list__link:focus .card-title::after,
 .card-list__link:hover .card-title::after {
-  color: #ffffff;
+  background-color: $white-color;
 }
 
 .icon-how-we-do {
   fill: $accent-color;
   margin: 20px auto;
+
+  transition: fill $time250 $cubic;
 
   @media screen and (min-width: $tablet-768) {
     margin: 40px auto;
@@ -162,16 +180,18 @@
 .card-title {
   margin: 0 10px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.08em;
   color: $text-second-color;
 
+  transition: color $time500 $cubic $time250;
+
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     flex-direction: row;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.4;
     text-align: center;
@@ -181,7 +201,7 @@
 
   @media screen and (min-width: $desktop-1366) {
     flex-direction: row;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.4;
     text-align: center;
@@ -191,19 +211,25 @@
 }
 
 .card-title::after {
-  content: '\2015';
   display: block;
+  content: '';
 
-  font-weight: bold;
+  width: 20px;
+  height: 2px;
+  margin: 15px auto;
+
+  font-weight: 700;
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.08em;
 
-  color: $accent-color;
+  background-color: $accent-color;
+
+  transition: background-color $time500 $cubic $time500;
 }
 
 .card-text {
-  margin: auto 10px;
+  margin: 0 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -212,6 +238,8 @@
   color: $text-primary-color;
 
   padding-bottom: 30px;
+
+  transition: color $time500 $cubic $time750;
 
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     flex-direction: row;

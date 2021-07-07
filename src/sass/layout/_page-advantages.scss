@@ -1,16 +1,20 @@
 // <Section>
 .advantages {
-
   padding-top: 30px;
   padding-bottom: 45px;
 
   @media screen and (min-width: $tablet-768) {
-    padding-top: 45;
+    padding-top: 45px;
   }
   @media screen and (min-width: $desktop-1366) {
-    padding-top: 95;
+    padding-top: 95px;
     padding-bottom: 130px;
   }
+}
+// <Div> Container
+.advantages .container {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 //  <Ul>
 .advantages-list {
@@ -31,8 +35,8 @@
   height: 83px;
 
   // padding: 0 15px;
-  padding-right: 20%;
-  margin: 0 auto;
+  padding-right: 0;
+  // margin: 0 auto;
 
   font-weight: 700;
   line-height: 1.649;
@@ -45,7 +49,7 @@
       margin-bottom: 20px;
     }
     &:not(:first-child) {
-      padding-right: 33%;
+      padding-right: 20%;
     }
   }
   @media screen and (min-width: 400px) and (max-width: 767px) {
@@ -60,12 +64,20 @@
   @media screen and (min-width: $tablet-768) {
     min-width: 235px;
 
+    &:not(:first-child) {
+      padding-right: 7%;
+    }
+
     line-height: 1.43;
   }
   @media screen and (min-width: $desktop-1366) {
     font-size: 20px;
     max-width: 370px;
     min-height: 102px;
+
+    &:not(:first-child) {
+      padding-right: 3%;
+    }
   }
 }
 
@@ -84,7 +96,7 @@
   @media screen and (min-width: $desktop-1366) {
     min-width: 100px;
     min-height: 102px;
-    margin-right: -20px;
+    margin-right: -18px;
     background-image: url(../images/advantages/icon-advantages-desktop-1.svg);
   }
 }

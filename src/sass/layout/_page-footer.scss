@@ -1,31 +1,44 @@
-.footer-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.footer-top {
-  text-align: center;
-  background-color: $white-color;
+.footer {
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(to bottom, $white-color 76%, $text-second-color 24%);
+  }
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    background-image: linear-gradient(to bottom, $white-color 65%, $text-second-color 35%);
+  }
+
+  @media screen and (min-width: 1366px) {
+    background-image: linear-gradient(to bottom, $white-color 69%, $text-second-color 31%);
+  }
+}
+
+.footer-top {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    padding: 30px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 }
 .footer-logo {
   margin-bottom: 21px;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
-    /*padding-left: 40px;*/
-    margin-right: 203px;
-  }
   @media screen and (min-width: 1366px) {
-    padding-left: 183px;
     margin-right: 290px;
   }
 }
 .fotter-logo-link {
   align-items: center;
-
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -39,55 +52,40 @@
     height: 45px;
   }
 }
-.footer-list {
-  margin-bottom: 32px;
-
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (min-width: 768px) {
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    margin-left: auto;
   }
 }
 
-.footer-item .link {
+.footer-tel-link {
   display: flex;
   align-items: center;
   text-align: center;
-  font-weight: 700;
-  font-size: 14px;
+  justify-content: center;
+  font-weight: 600;
   line-height: 1.21;
   letter-spacing: 0.08em;
   text-decoration: none;
   color: $text-second-color;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    line-height: 1.2;
+    margin-right: 50px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1366px) {
     font-size: 30px;
-    line-height: 1.23;
+    margin-right: 40px;
   }
 }
-.footer-item:not(:last-child) {
-  @media screen and (min-width: 768px) {
-    padding-right: 24px;
-    border-right: 1px solid #b9b9b9;
-    margin-right: 24px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-right: 16px;
-  }
-}
-/*.footer-link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.21;
-  text-align: center;
-  letter-spacing: 0.08em;
-  color: $text-second-color;
-}*/
-
 .footer-tel {
   width: 20px;
   height: 20px;
@@ -100,49 +98,39 @@
   }
   @media screen and (min-width: 1366px) {
     width: 30px;
-    height: 29px;
+    height: 30px;
     margin-right: 15px;
   }
-}
-.footer-item:not(:last-child) {
-  margin-bottom: 31px;
 }
 .footer-social-link {
   width: 40px;
   height: 40px;
-  background-image: /*linear-gradient(
-      (rgba(131, 58, 180, 0)),
-      (rgba(131, 58, 180, 0)),
-      (rgba(131, 58, 180, 0)),
-      (rgba(131, 58, 180, 0)),
-      (rgba(131, 58, 180, 1)),
-      (rgba(161, 181, 216, 0)),
-      (rgba(250, 225, 0, 0)),
-      (rgba(250, 225, 0, 1))
-    ),*/ url('../images/compressed/footer/icon-instagram.svg');
-}
-.footer-bottom {
-  min-height: 70px;
-  background-color: $text-second-color;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  background-image: url('../images/compressed/footer/icon-instagram.svg');
 
   @media screen and (min-width: 768px) {
-    padding-left: 40px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-left: 183px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 40px;
+      border: 1px solid $text-third-color;
+      left: -25px;
+    }
   }
 }
+
 .fotter-bottom-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
-  text-align: center;
   color: $text-primary-color;
 
-  @media screen and (min-width: 768px) {
-    text-align: left;
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 }
 .fotter-bottom-text::before {
