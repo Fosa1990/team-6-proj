@@ -52,6 +52,10 @@
   width: 84%;
 }
 
+.reviewer-icon-link {
+  display: block;
+}
+
 ////////////////////SHOW MORE////////////////////////////
 .read-more-state {
   display: none;
@@ -89,6 +93,7 @@
 .reviewer-item {
   width: 54px;
   height: 54px;
+  cursor: pointer;
 }
 
 .item-1 {
@@ -202,7 +207,11 @@
     &::before{
       content: '';
       display: block;
-      width: 25px;
+      width: 27px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
       height: 15px;
       background-image: url(../images/reviews/left-arrow.svg);
       position: absolute;
@@ -212,7 +221,11 @@
     &::after {
       content: '';
       display: block;
-      width: 25px;
+      width: 27px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
       height: 15px;
       background-image: url(../images/reviews/right-arrow.svg);
       position: absolute;
