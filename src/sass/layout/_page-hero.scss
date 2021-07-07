@@ -1,15 +1,15 @@
 .hero {
-  padding-top: 22px;
+  padding-bottom: 50px;
 
   @media screen and (min-width: $tablet-768) {
-    padding-top: 48px;
+    padding-bottom: 140px;
   }
 
   @media screen and (min-width: $desktop-1366) {
-    padding-top: 68px;
+    padding-bottom: 255px;
   }
 }
-.hero {
+.hero-wave {
   background-image: url('../images/compressed/hero/background/png/hero-wave-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,16 +54,14 @@
 }
 .hero-menu {
   display: inherit;
-  margin-bottom: 55px;
+  padding-bottom: 55px;
 
   @media screen and (min-width: $tablet-768) {
-    margin-bottom: 100px;
     flex-direction: column;
     width: 330px;
   }
 
   @media screen and (min-width: $desktop-1366) {
-    margin-bottom: 250px;
     width: 640px;
   }
 }
