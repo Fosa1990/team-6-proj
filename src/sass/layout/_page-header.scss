@@ -17,14 +17,17 @@
   margin-left: 50px;
 }
 .header-link {
-  padding-top: 25px;
-  padding-bottom: 25px;
-
   cursor: pointer;
 
   &:hover {
     color: $accent-color;
   }
+}
+.header-use {
+  display: inline;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .header-navigation {
   display: none;
@@ -37,6 +40,8 @@
 
   @media screen and (min-width: $desktop-1366) {
     display: flex;
+
+    padding: 32px 0px 32px 0px;
   }
 }
 .header-logo-icon {
