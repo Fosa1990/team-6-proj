@@ -2,7 +2,7 @@
   padding: 55px 20px 55px;
   background: $text-second-color;
   min-height: 507px;
-  background-image: url('../images/compressed/contacts/contacts-mobile-bg.png');
+  background-image: url('../images/contacts/contacts-mobile-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   .container-contacts {
     padding-top: 55px;
     padding-bottom: 55px;
-    background-image: url('../images/compressed/contacts/contacts-mobile-bg@2x.png');
+    background-image: url('../images/contacts/contacts-mobile-bg@2x.png');
   }
 }
 
@@ -24,7 +24,7 @@
   .container-contacts {
     padding-top: 66px;
     padding-bottom: 66px;
-    background-image: url('../images/compressed/contacts/contacts-tablet-bg.png');
+    background-image: url('../images/contacts/contacts-tablet-bg.png');
   }
 }
 /* 2x и 768+ */
@@ -34,7 +34,7 @@
   .container-contacts {
     padding-top: 66px;
     padding-bottom: 66px;
-    background-image: url('../images/compressed/contacts/contacts-tablet-bg@2x.png');
+    background-image: url('../images/contacts/contacts-tablet-bg@2x.png');
   }
 }
 
@@ -44,7 +44,7 @@
     text-align: center;
     padding-top: 100px;
     padding-bottom: 62px;
-    background-image: url('../images/compressed/contacts/contacts-desktop-bg.png');
+    background-image: url('../images/contacts/contacts-desktop-bg.png');
   }
 }
 /* 2x и 1366+ */
@@ -52,7 +52,7 @@
   (min-resolution: 192dpi) and (min-width: $desktop-1366),
   (min-resolution: 2dppx) and (min-width: $desktop-1366) {
   .container-contacts {
-    background-image: url('../images/compressed/contacts/contacts-desktop-bg@2x.png');
+    background-image: url('../images/contacts/contacts-desktop-bg@2x.png');
   }
 }
 .contacts-form {
