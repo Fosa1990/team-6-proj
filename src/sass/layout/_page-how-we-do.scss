@@ -48,7 +48,7 @@
   margin-left: 20px;
   margin-top: 20px;
   transform: scale(1);
-  transition: transform $time1000 $cubic;
+  transition: transform $time250 $cubic;
   box-shadow: 0 8px 26px $shadow-second-color;
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     width: calc((100% - 2 * 20px) / 2);
@@ -70,8 +70,8 @@
   flex-direction: column;
   color: $text-second-color;
   transform: scale(1);
-  transition: box-shadow $time250 $cubic, transform $time1000 $cubic,
-    background-color $time500 $cubic, border-radius $time1000 $cubic;
+  transition: box-shadow $time250 $cubic, transform $time250 $cubic,
+    background-color $time250 $cubic, border-radius $time250 $cubic;
   &:hover,
   &:focus {
     background: $accent-color;
@@ -110,7 +110,7 @@
 .icon-how-we-do {
   fill: $accent-color;
   margin: 20px auto;
-  transition: fill $time250 $cubic, transform $time1000 $cubic;
+  transition: fill $time250 $cubic, transform $time250 $cubic;
   @media screen and (min-width: $tablet-768) {
     margin: 40px auto;
   }
@@ -147,7 +147,7 @@
   text-align: center;
   letter-spacing: 0.08em;
   color: $text-second-color;
-  transition: color $time500 $cubic $time250;
+  transition: color $time250 $cubic;
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     flex-direction: row;
     font-weight: 700;
@@ -178,9 +178,8 @@
   line-height: 1;
   letter-spacing: 0.08em;
   background-color: $accent-color;
-  transition: background-color $time500 $cubic $time500;
+  transition: background-color $time250 $cubic;
 }
-
 .card-text {
   margin: 0 10px;
   font-weight: 500;
@@ -190,7 +189,7 @@
   letter-spacing: 0.08em;
   color: $text-primary-color;
   padding-bottom: 30px;
-  transition: color $time500 $cubic $time750;
+  transition: color $time250 $cubic;
   @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     flex-direction: row;
     font-weight: 500;
