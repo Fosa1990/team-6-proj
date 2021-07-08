@@ -223,7 +223,7 @@
   @media screen and (min-width: 1200px) {
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
-      transform: translateX(225%);
+      transform: translateX(275%);
     }
   }
 }
