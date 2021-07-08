@@ -1,4 +1,4 @@
-import './sass/main.scss';
+import '../sass/main.scss';
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),

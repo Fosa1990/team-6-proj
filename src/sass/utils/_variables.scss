@@ -1,38 +1,28 @@
-// Всі перемінні. Кольори, тіні, фонти, кубік, час і т.д. [ $ім'я ]
-
-// Colors
-// Named colors
+$mobile-320: 320px;
+$mobile-480: 480px;
+$tablet-768: 768px;
+$desktop-1366: 1366px;
 $white-color: #ffffff;
 $black-color: #000000;
 $color-success: #008000;
 $color-warning: #ffa500;
 $color-error: #ff0000;
 $dark-light-color: rgba(33, 33, 33, 0.2);
-// colors Text
 $text-primary-color: #b9b9b9;
 $text-second-color: #111518;
 $text-third-color: #3d3d3d;
-// color Accent
 $accent-color: #ff6b09;
-// color placeholders
 $place-holder-color: rgba(117, 117, 117, 0.5);
-// color checkbox
 $checkbox-border-color: #2a2a2a;
-// color backgrounds
 $bg-main-color: rgba(17, 21, 24, 0.9);
 $bg-second-color: #f1f1f1;
 $bg-third-color: rgba(118, 69, 69, 0);
-// color border
 $border-form-color: rgba(33, 33, 33, 0.2);
-// color Shadows
 $shadow-primary-color: rgba(0, 0, 0, 0.04);
 $shadow-second-color: rgba(0, 0, 0, 0.1);
 $shadow-third-color: rgba(0, 0, 0, 0.25);
-// Full shadows
 $shadow-primary: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
-
-// Times for transformations
 $time0: 0ms;
 $time250: 250ms;
 $time500: 500ms;
@@ -44,10 +34,4 @@ $time1750: 1750ms;
 $time2000: 2000ms;
 $time2250: 2250ms;
 $time2500: 2500ms;
-// Cubic
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
-
-// add custom animations to HTML  [ https://animate.style/ ]
-// add animation class      [ class="animate__animated" ]
-// add prefix of animations [ class="animate__" ]
-// add name of animation after prefix [ class="__name-animation" ]

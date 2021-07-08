@@ -2,7 +2,6 @@
   background-image: linear-gradient($text-second-color 68%, $white-color 68% 100%);
   counter-reset: section;
 }
-
 .benefits-title {
   margin-bottom: 30px;
   font-weight: 800;
@@ -11,20 +10,17 @@
   letter-spacing: 0.03em;
   color: $white-color;
 }
-
 .benefits-list {
   padding: 20px 14px 20px 30px;
   background-color: $white-color;
   box-shadow: -5px 8px 26px $shadow-primary-color;
 }
-
 .benefits-item {
   counter-increment: section;
   font-weight: 700;
   line-height: 1.43;
   letter-spacing: 0.08em;
   color: $text-second-color;
-
   &::before {
     content: '\2015  0'counter(section) '';
     display: block;
