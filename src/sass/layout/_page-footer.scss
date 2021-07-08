@@ -91,7 +91,7 @@
   margin-right: 10px;
   fill: $accent-color;
   transform: rotateZ(0deg);
-  transition: transform $time1250 $cubic;
+  transition: transform $time250 $cubic;
   @media screen and (min-width: $tablet-768) {
     width: 24px;
     height: 24px;
