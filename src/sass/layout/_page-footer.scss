@@ -2,16 +2,13 @@
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(to bottom, $white-color 76%, $text-second-color 24%);
   }
-
   @media screen and (min-width: $tablet-768) {
     background-image: linear-gradient(to bottom, $white-color 65%, $text-second-color 35%);
   }
-
   @media screen and (min-width: $desktop-1366) {
     background-image: linear-gradient(to bottom, $white-color 69%, $text-second-color 31%);
   }
 }
-
 .footer-top {
   display: flex;
   @media screen and (max-width: 767px) {
@@ -47,7 +44,6 @@
 .footer-logo-icon {
   width: 80px;
   height: 29px;
-
   @media screen and (min-width: $tablet-768) {
     width: 128px;
     height: 45px;
@@ -66,20 +62,17 @@
     margin-left: 0;
   }
 }
-
 .footer-tel-link {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-
   font-weight: 600;
   font-size: inherit;
   line-height: 1.21;
   letter-spacing: 0.08em;
   text-decoration: none;
   color: $text-second-color;
-
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
@@ -95,13 +88,10 @@
 .footer-tel {
   width: 20px;
   height: 20px;
-
   margin-right: 10px;
-
   fill: $accent-color;
   transform: rotateZ(0deg);
   transition: transform $time1250 $cubic;
-
   @media screen and (min-width: $tablet-768) {
     width: 24px;
     height: 24px;
@@ -120,10 +110,8 @@
   width: 40px;
   height: 40px;
   background-image: url('../images/compressed/footer/icon-instagram.svg');
-
   @media screen and (min-width: $tablet-768) {
     position: relative;
-
     &::after {
       position: absolute;
       content: '';
@@ -134,7 +122,6 @@
     }
   }
 }
-
 .fotter-bottom-text {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -142,7 +129,6 @@
   font-size: inherit;
   line-height: 2;
   color: $text-primary-color;
-
   @media screen and (max-width: 767px) {
     text-align: center;
   }

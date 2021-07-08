@@ -1,20 +1,12 @@
-// Стилі  UTILITS
 @import './utils/visually-hidden';
 @import './utils/variables';
-@import './utils/breakpoints';
-
-// Стилі  BASE
 @import './base/commons';
 @import './base/container';
-
-// Стилі  COMPONENTS
 @import './components/button';
 @import './components/logo';
 @import './components/modal-backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
-
-// Стилі HTML-фрагментів
 @import './layout/page-header';
 @import './layout/page-hero';
 @import './layout/page-advantages';
