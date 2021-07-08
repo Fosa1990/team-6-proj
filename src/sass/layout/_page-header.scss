@@ -1,10 +1,8 @@
 .header {
   position: relative;
-
   @media screen and (min-width: $tablet-768) {
     padding-bottom: 30px;
   }
-
   @media screen and (min-width: $desktop-1366) {
     padding-bottom: 55px;
   }
@@ -18,26 +16,22 @@
 }
 .header-link {
   cursor: pointer;
-
   &:hover {
     color: $accent-color;
   }
 }
 .header-use {
   display: inline;
-
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .header-navigation {
   display: none;
-
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
   color: $text-primary-color;
-
   @media screen and (min-width: $desktop-1366) {
     display: flex;
 
@@ -47,12 +41,10 @@
 .header-logo-icon {
   padding-top: 30px;
   padding-bottom: 30px;
-
   @media screen and (min-width: $tablet-768) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   @media screen and (min-width: $desktop-1366) {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -62,14 +54,11 @@
 .header-icon {
   border: none;
   background: 0;
-
   margin-left: auto;
   padding: 30px 0px 30px 15px;
-
   @media screen and (min-width: $tablet-768) {
     margin-left: 40px;
   }
-
   @media screen and (min-width: $desktop-1366) {
     display: none;
   }
@@ -77,7 +66,6 @@
 .header-logo {
   width: 80px;
   height: 30px;
-
   @media screen and (min-width: $tablet-768) {
     width: 128px;
     height: 45px;
@@ -89,7 +77,6 @@
     padding: 15px 10px 15px 10px;
     margin-left: auto;
   }
-
   @media screen and (min-width: $desktop-1366) {
     padding: 26px 50px 26px 50px;
   }

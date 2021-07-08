@@ -1,186 +1,154 @@
 .section-about-title {
-    padding: 40px 0 20px 0;
+  padding: 40px 0 20px 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: $text-second-color;
+  @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     font-weight: 800;
-    font-size: 20px;
-    line-height: 1.3;  
-    letter-spacing: 0.03em;  
-    color: $text-second-color;
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    padding-top: 50px;
+  }
 
-    @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
-        font-weight: 800;
-        font-size: 26px;
-        line-height: 1.3;
-        letter-spacing: 0.03em;
-        padding-top: 50px;
-    }
-
-    @media screen and (min-width: $desktop-1366) {
-        font-weight: 800;
-        font-size: 46px;
-        line-height: 1.3;
-        letter-spacing: 0.03em; 
-        padding-top: 130px;      
-    }
+  @media screen and (min-width: $desktop-1366) {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    padding-top: 130px;
+  }
 }
-
 .wrapper-about {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
-    @media screen and (min-width: $tablet-768){
-        flex-direction: row;
-        
-    }
+  @media screen and (min-width: $tablet-768) {
+    flex-direction: row;
+  }
 }
-
 .section-img {
+  min-width: 243px;
+  min-height: 305px;
+
+  @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
     min-width: 243px;
     min-height: 305px;
-
-    @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
-        min-width: 243px;
-        min-height: 305px;
-        margin-right: 40px;
-    }
-    
-    @media screen and (min-width: $desktop-1366) {
-        min-width: 530px;
-        min-height: 667px;    
-    }
+    margin-right: 40px;
+  }
+  @media screen and (min-width: $desktop-1366) {
+    min-width: 530px;
+    min-height: 667px;
+  }
 }
-
 .section-right-side {
-    position: relative;
+  position: relative;
 
-    @media screen and (min-width: $desktop-1366){
-        margin-left: 30px;
-    }
-    
+  @media screen and (min-width: $desktop-1366) {
+    margin-left: 30px;
+  }
 }
-
 .teacher-name {
-    margin: 20px 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid $text-primary-color;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $text-primary-color;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $text-second-color;
+  @media screen and (min-width: $tablet-768) {
+    margin: 0 0 20px 0;
+  }
+  @media screen and (min-width: $desktop-1366) {
     font-weight: 800;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 30px;
+    line-height: 1.23;
     letter-spacing: 0.08em;
-    color: $text-second-color;
-
-    @media screen and (min-width: $tablet-768) {
-        margin: 0 0 20px 0;
-    }
-
-    @media screen and (min-width: $desktop-1366) {
-        font-weight: 800;
-        font-size: 30px;
-        line-height: 1.23;
-        letter-spacing: 0.08em;
-    }
+  }
 }
-
 .expirience::before {
-    position: absolute;
-    left: 1px;
-
-    content: '';
-    display: block;
-    width: 17px;
-    height: 14px;
-    background-image: url(../images/compressed/about/submit-icon.svg);
+  position: absolute;
+  left: 1px;
+  content: '';
+  display: block;
+  width: 17px;
+  height: 14px;
+  background-image: url(../images/compressed/about/submit-icon.svg);
 }
-
 .expirience {
-    
-    padding-left: 25px;
-    padding-bottom: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  color: $text-second-color;
+  @media screen and (min-width: $tablet-768) {
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.06em;   
-    color: $text-second-color;
-
-    @media screen and (min-width: $tablet-768) {
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 0.06em;
-        
-    }
-
-    @media screen and (min-width: $desktop-1366) {
-        padding-right: 120px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.06em;
-    }
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: $desktop-1366) {
+    padding-right: 120px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+  }
 }
-
-
-
 .description-bar::before {
-    content: '\2015';
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;  
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.08em;  
-    color: $accent-color;
+  content: '\2015';
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $accent-color;
 }
-
 .description {
-    
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.17;
+  color: $text-primary-color;
+  @media screen and (min-width: $tablet-768) {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 2.17;
-    color: $text-primary-color;
-
-    @media screen and (min-width: $tablet-768) {
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 2;
-    }
-
-    @media screen and (min-width: $desktop-1366) {
-        padding-right: 130px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.56;
-        margin-bottom: 30px;
-    }
+    font-size: 10px;
+    line-height: 2;
+  }
+  @media screen and (min-width: $desktop-1366) {
+    padding-right: 130px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 30px;
+  }
 }
-
-.last-description{
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-
-    @media screen and (min-width: $tablet-768) {
-        margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: $desktop-1366) {
-        margin-bottom: 80px;
-    }
+.last-description {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  @media screen and (min-width: $tablet-768) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop-1366) {
+    margin-bottom: 80px;
+  }
 }
-
-
 .certificate-link {
-    
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  text-decoration-line: underline;
+  color: $accent-color;
+  @media screen and (min-width: $desktop-1366) {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    text-decoration-line: underline;
-    color: $accent-color;
-
-    @media screen and (min-width: $desktop-1366) {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.56;
-        
-    }
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
