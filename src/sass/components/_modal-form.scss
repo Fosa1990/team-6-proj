@@ -214,12 +214,6 @@
   .form__input:not(:placeholder-shown) + & {
     color: $accent-color;
   }
-  @media screen and (min-width: $mobile-320) {
-    .form__field:focus-within > &,
-    .form__input:not(:placeholder-shown) + & {
-      transform: translateX(calc(260% - 64px));
-    }
-  }
   @media screen and (min-width: $mobile-480) and (max-width: 1199px) {
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
