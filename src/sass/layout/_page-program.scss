@@ -13,7 +13,7 @@
   color: $white-color;
 }
 
-.program-item-first {
+.program-item-semester {
   position: relative;
   font-weight: 700;
   line-height: 1;
@@ -30,7 +30,7 @@
     height: 12px;
     border-radius: 50%;
     background-color: $accent-color;
-    transform: translateX(-57%);
+    transform: translateX(-56%);
   }
 }
 
@@ -39,7 +39,7 @@
   text-transform: capitalize;
 }
 
-.program-item-second {
+.program-item-block {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
@@ -55,7 +55,7 @@
   padding-top: 5px;
 }
 
-.program-item-third {
+.program-item-description {
   font-weight: 500;
   color: $text-primary-color;
   opacity: 0.5;
@@ -67,25 +67,20 @@
     text-align: center;
   }
 
-  .program-wrapper {
-    padding-left: calc((100vw - 172px) / 2);
-  }
-
   .program-list-first {
     position: relative;
+    padding-left: calc((100vw - 172px) / 2);
 
     &::after {
-      z-index: 500;
+      z-index: 499;
       content: '';
       position: absolute;
-      left: 106px;
+      left: calc(100vw * 180 / 320);
       bottom: -97px;
       width: 120px;
       height: 137px;
-      background-color: $accent-color;
-      background-image: url(../images/compressed/program/jpeg/program-img-mobile.jpg);
+      background-image: url(../images/program/png/program-img-mobile.png);
       background-size: cover;
-      opacity: 0.5;
     }
   }
 
@@ -95,12 +90,12 @@
     (min-resolution: 2dppx) and (max-width: 767px) {
     .program-list-first {
       &::after {
-        background-image: url(../images/compressed/program/jpeg/program-img-mobile@2x.jpg);
+        background-image: url(../images/program/png/program-img-mobile@2x.png);
       }
     }
   }
 
-  .program-item-first {
+  .program-item-semester {
     padding-left: 26px;
 
     &:not(:last-child) {
@@ -109,7 +104,7 @@
     }
   }
 
-  .program-item-second {
+  .program-item-block {
     &:not(:last-child) {
       margin-bottom: 8px;
     }
@@ -127,17 +122,15 @@
     position: relative;
 
     &::after {
-      z-index: 500;
+      z-index: 499;
       content: '';
       position: absolute;
       right: 0;
-      bottom: -139px;
+      bottom: -150px;
       width: 384px;
       height: 280px;
-      background-color: $accent-color;
-      background-image: url(../images/compressed/program/jpeg/program-img-tablet.jpg);
+      background-image: url(../images/program/png/program-img-tablet.png);
       background-size: cover;
-      opacity: 0.5;
     }
   }
 
@@ -147,24 +140,24 @@
     (min-resolution: 2dppx) and (min-width: $tablet-768) {
     .program-container {
       &::after {
-        background-image: url(../images/compressed/program/jpeg/program-img-tablet@2x.jpg);
+        background-image: url(../images/program/png/program-img-tablet@2x.png);
       }
     }
   }
+}
 
-  .program-title {
-    margin-bottom: 52px;
-    font-size: 26px;
-  }
+.program-title {
+  margin-bottom: 52px;
+  font-size: 26px;
 }
 
 // 768-1365
 @media screen and (min-width: $tablet-768) and (max-width: 1365px) {
-  .program-wrapper {
+  .program-list-first {
     padding-left: 63px;
   }
 
-  .program-item-first {
+  .program-item-semester {
     padding-left: 56px;
 
     &:not(:last-child) {
@@ -178,13 +171,13 @@
     flex-wrap: wrap;
   }
 
-  .program-item-second {
+  .program-item-block {
     &:not(:last-child) {
       margin-right: 50px;
     }
 
     &:nth-child(1) {
-      width: 180px;
+      width: 182px;
     }
 
     &:nth-child(2) {
@@ -197,16 +190,16 @@
 @media screen and (min-width: $desktop-1366) {
   .program {
     padding-top: 120px;
-    padding-bottom: 153px;
+    padding-bottom: 120px;
   }
 
   .program-container {
     &::after {
-      left: -183px;
-      bottom: -363px;
-      width: 667px;
-      height: 510px;
-      background-image: url(../images/compressed/program/jpeg/program-img-desktop.jpg);
+      left: -157px;
+      bottom: -305px;
+      width: 672px;
+      height: 502px;
+      background-image: url(../images/program/png/program-img-desktop.png);
     }
   }
 
@@ -216,7 +209,7 @@
     (min-resolution: 2dppx) and (min-width: $desktop-1366) {
     .program-container {
       &::after {
-        background-image: url(../images/compressed/program/jpeg/program-img-desktop@2x.jpg);
+        background-image: url(../images/program/png/program-img-desktop@2x.png);
       }
     }
   }
@@ -227,13 +220,22 @@
   }
 
   .program-list-first {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid $white-color;
     padding-top: 60px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc((100vw - 1314px) / -2);
+      top: 0;
+      width: 100vw;
+      border-top: 1px solid $white-color;
+    }
   }
 
-  .program-item-first {
+  .program-item-semester {
     width: 240px;
     font-size: 20px;
 
@@ -250,7 +252,7 @@
     padding-top: 25px;
   }
 
-  .program-item-second {
+  .program-item-block {
     font-size: 20px;
 
     &:not(:last-child) {
@@ -262,7 +264,7 @@
     padding-top: 10px;
   }
 
-  .program-item-third {
+  .program-item-description {
     font-size: 18px;
     line-height: 1.56;
   }
