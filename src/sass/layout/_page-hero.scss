@@ -10,7 +10,7 @@
   }
 }
 .hero-wave {
-  background-image: url('../images/compressed/hero/background/png/hero-wave-mobile.png');
+  background-image: url('../images/hero/background/hero-wave-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 10%;
@@ -21,28 +21,28 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/compressed/hero/background/png/hero-wave-mobile@2x.png');
+    background-image: url('../images/hero/background/hero-wave-mobile@2x.png');
   }
 
   @media screen and (min-width: $tablet-768) {
-    background-image: url('../images/compressed/hero/background/png/hero-wave-tablet.png');
+    background-image: url('../images/hero/background/hero-wave-tablet.png');
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/compressed/hero/background/png/hero-wave-tablet@2x.png');
+      background-image: url('../images/hero/background/hero-wave-tablet@2x.png');
     }
   }
 
   @media screen and (min-width: $desktop-1366) {
-    background-image: url('../images/compressed/hero/background/png/hero-wave-deskstop.png');
+    background-image: url('../images/hero/background/hero-wave-deskstop.png');
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/compressed/hero/background/png/hero-wave-desktop@2x.png');
+      background-image: url('../images/hero/background/hero-wave-desktop@2x.png');
     }
   }
 }
