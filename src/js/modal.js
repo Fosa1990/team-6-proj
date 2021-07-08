@@ -3,11 +3,11 @@
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
-    // mobileBtnOne = document.querySelector("[data-menu-one]"),
-    // mobileBtnTwo = document.querySelector("[data-menu-two]"),
-    // mobileBtnTree = document.querySelector("[data-menu-three]"), 
-    // mobileBtnFour = document.querySelector("[data-menu-four]"),
-    // mobileBtnClose = document.querySelector("[data-menu-close]"),
+    // mobileBtnOne : document.querySelector("[data-menu-one]"),
+    // mobileBtnTwo : document.querySelector("[data-menu-two]"),
+    // mobileBtnTree : document.querySelector("[data-menu-three]"), 
+    // mobileBtnFour : document.querySelector("[data-menu-four]"),
+    // mobileBtnClose : document.querySelector("[data-menu-close]"),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
