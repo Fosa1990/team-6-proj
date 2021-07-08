@@ -1,35 +1,14 @@
-// Загаліні стилі
-// Добавляє плавний скрол по всій сторінці
-// html {
-//   scroll-behavior: smooth;
-// }
-
 body {
   margin: 0 auto;
-
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-
-  // Устанавливает значение счётчика, равным 0
   counter-reset: section;
-
-  // &.modal-open {
-  //   overflow: hidden;
-  // }
   &.form-open {
     overflow: hidden;
   }
 }
-// DELETE IF ALL WORKS FINE
-// .form-open .btn-mob-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
-// DELETE IF ALL WORKS FINE
-
 h1,
 h2,
 h3,
@@ -40,32 +19,24 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 label {
   display: block;
 }
-
 ol,
 ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-// Картинки: робимо блоковими + забираємо простір під картинкою
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
-// забираєм підкреслення і правий відступ у посилань
 a {
   text-decoration: none;
   display: inline-block;
   color: inherit;
 }
-
-// забираєм крапку, margin i padding y всіх списках
 ul {
   list-style-type: none;
   margin: 0;
