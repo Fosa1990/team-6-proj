@@ -1,28 +1,58 @@
 //  ===== Форма модального окна =====
 //  <Form> Форма
 .form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  max-width: 450px;
+  height: 609px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 
-  width: 450px;
-  height: 609px;
-
-  margin: 0 auto;
   padding: 40px;
+  margin: 0 auto;
 
   background-color: $bg-second-color;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $time250 $cubic;
+
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 2 * 15px);
+  }
+  @media screen and (min-width: $tablet-768) and (max-width: 1199px) {
+    width: calc(100% - 2 * 159px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: $desktop-1366) {
+    top: 50%;
+    left: 50%;
+
+    min-width: 528px;
+    min-height: 581px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  // Исправляет баг выпадания модалки за екран
+  @media (max-height: 600px) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 //  <P> Заголовок формы
 .form__description {
   margin-bottom: 30px;
   margin-top: 0;
-
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 0;
+  padding-right: 0;
 
   font-weight: 700;
   font-size: 20px;
@@ -30,6 +60,10 @@
   text-align: center;
   color: $accent-color;
 
+  @media screen and (min-width: $mobile-480) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
   @media screen and (min-width: $desktop-1366) {
     line-height: 1.15;
   }
@@ -61,7 +95,7 @@
   display: block;
   width: 100%;
   height: 40px;
-  padding: 12px 12px 12px 42px;
+  padding: 12px 12px 12px 25px;
 
   color: $accent-color;
 
@@ -73,6 +107,9 @@
   transition: border $time250 $cubic;
 
   outline: none;
+  @media screen and (min-width: $mobile-480) {
+    padding: 12px 12px 12px 42px;
+  }
 
   //  <Input> Анимация рамки при фокусе
   .form__field:focus-within > & {
@@ -94,7 +131,7 @@
 .form__label {
   position: absolute;
   top: 50%;
-  left: 9%;
+  left: 25px;
 
   font-size: 12px;
   line-height: 1.16;
@@ -103,12 +140,22 @@
 
   transform: translate(0, -50%);
   transition: transform $time250 linear, color $time250 $cubic;
-
   //  <Span> Анимация текста при фокусе поля ввода
-  .form__field:focus-within > &,
-  .form__input:not(:placeholder-shown) + & {
-    color: $accent-color;
-    transform: translateY(-35px) translateX(-35px);
+
+  @media screen and (min-width: $mobile-480) {
+    left: 9%;
+
+    .form__field:focus-within > &,
+    .form__input:not(:placeholder-shown) + & {
+      color: $accent-color;
+      transform: translateY(-35px) translateX(-40px);
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .form__field:focus-within > &,
+    .form__input:not(:placeholder-shown) + & {
+      transform: translateY(-35px) translateX(-33px);
+    }
   }
   @media screen and (max-width: 677px) {
     .form__field:focus-within > &,
@@ -116,10 +163,10 @@
       transform: translateY(-40px) translateX(-33px);
     }
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 479px) {
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
-      transform: translateY(-35px) translateX(-33px);
+      transform: translateY(-35px) translateX(-25px);
     }
   }
 }
@@ -166,12 +213,23 @@
   .form__field:focus-within > &,
   .form__input:not(:placeholder-shown) + & {
     color: $accent-color;
-    transform: translateX(225%);
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: $mobile-320) {
+    .form__field:focus-within > &,
+    .form__input:not(:placeholder-shown) + & {
+      transform: translateX(calc(260% - 64px));
+    }
+  }
+  @media screen and (min-width: $mobile-480) and (max-width: 1199px) {
     .form__field:focus-within > &,
     .form__input:not(:placeholder-shown) + & {
       transform: translateX(240%);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .form__field:focus-within > &,
+    .form__input:not(:placeholder-shown) + & {
+      transform: translateX(225%);
     }
   }
 }
