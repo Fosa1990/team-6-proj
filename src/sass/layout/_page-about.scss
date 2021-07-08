@@ -45,7 +45,7 @@
 
   @media screen and (min-width: $desktop-1366) {
     min-width: 530px;
-    min-height: 667px;
+    min-height: 676px;
   }
 }
 
@@ -127,6 +127,18 @@
   color: $accent-color;
 }
 
+.description-wrapper {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-768) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop-1366) {
+    margin-bottom: 100px;
+  }
+}
+
 .description {
   font-weight: 500;
   font-size: 12px;
@@ -145,19 +157,6 @@
     font-size: 18px;
     line-height: 1.56;
     margin-bottom: 30px;
-  }
-}
-
-.last-description {
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-
-  @media screen and (min-width: $tablet-768) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: $desktop-1366) {
-    margin-bottom: 80px;
   }
 }
 
