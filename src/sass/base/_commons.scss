@@ -18,11 +18,17 @@ body {
   &.modal-open {
     overflow: hidden;
   }
+  &.form-open {
+    overflow: hidden;
+  }
 }
-
-body.modal-open {
-  overflow: hidden;
-}
+// DELETE IF ALL WORKS FINE
+// .form-open .btn-mob-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+// DELETE IF ALL WORKS FINE
 
 h1,
 h2,
