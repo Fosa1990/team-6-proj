@@ -15,9 +15,9 @@ body {
   // Устанавливает значение счётчика, равным 0
   counter-reset: section;
 
-  &.modal-open {
-    overflow: hidden;
-  }
+  // &.modal-open {
+  //   overflow: hidden;
+  // }
   &.form-open {
     overflow: hidden;
   }
