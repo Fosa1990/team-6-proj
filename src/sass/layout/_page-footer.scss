@@ -113,8 +113,10 @@
   @media screen and (min-width: $tablet-768) {
     position: relative;
     &::after {
-      position: absolute;
       content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 1px;
       height: 40px;
       border: 1px solid $text-third-color;

@@ -2,9 +2,9 @@
   margin-top: 50px;
   margin-bottom: 50px;
   @media screen and (min-width: 1366px) {
-      margin-right: 10%;
-      margin-left: 10%;
-}
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 .reviews-title {
   font-weight: 800;
@@ -13,13 +13,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $text-second-color;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     font-size: 26px;
     margin-bottom: 70px;
   }
-  @media screen and (min-width: 1366px){
-      font-size: 46px;
-      margin-bottom: 100px;
+  @media screen and (min-width: 1366px) {
+    font-size: 46px;
+    margin-bottom: 100px;
   }
 }
 .reviewer-img {
@@ -42,9 +42,9 @@
     text-align: start;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 1366px){
-      font-size: 30px;
-      margin-bottom: 10px;
+  @media screen and (min-width: 1366px) {
+    font-size: 30px;
+    margin-bottom: 10px;
   }
 }
 .reviewer-shcool {
@@ -62,9 +62,9 @@
     margin-left: 0;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 1366px){
-      margin-bottom: 10px;
-      font-size: 14px;
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 10px;
+    font-size: 14px;
   }
 }
 .reviewer-feedback {
@@ -75,13 +75,13 @@
   margin-right: 8%;
   margin-left: 8%;
   width: 84%;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     text-align: start;
     margin-right: 0;
     margin-left: 0;
   }
-  @media screen and (min-width: 1366px){
-      font-size: 18px;
+  @media screen and (min-width: 1366px) {
+    font-size: 18px;
   }
 }
 .reviewer-icon-link {
@@ -114,22 +114,24 @@
   text-align: center;
   text-decoration-line: underline;
   color: $accent-color;
-  @media screen and (min-width: 1366px){
-      text-align: start;
+  @media screen and (min-width: 1366px) {
+    text-align: start;
   }
 }
 .reviewer-item {
   width: 54px;
   height: 54px;
   cursor: pointer;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-right: 10px;
-  }}
+    }
+  }
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-right: 30px;
-  }}
+    }
+  }
 }
 .item-1 {
   background: url(../images/reviews/item-1.jpg);
@@ -142,25 +144,25 @@
 }
 .item-4 {
   background: url(../images/reviews/item-4.jpg);
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 .item-5 {
   background: url(../images/reviews/item-5.jpg);
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 .item-6 {
   background: url(../images/reviews/item-6.jpg);
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 .item-7 {
   background: url(../images/reviews/item-7.jpg);
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -188,18 +190,18 @@
       background-image: url(../images/reviews/right-arrow.svg);
       position: absolute;
       transform: translateY(100%);
-      right: 0px;
+      right: 0;
       top: 0;
     }
   }
   @media screen and (min-width: 1366px) {
-      &::before {
-        left: -100px;
-      }
-      &::after {
-        right: -100px;
-      }
-   }
+    &::before {
+      left: -100px;
+    }
+    &::after {
+      right: -100px;
+    }
+  }
 }
 
 .reviews-img-wrapper {
@@ -213,7 +215,7 @@
     width: 60%;
   }
 }
-.reviewer{
+.reviewer {
   margin-bottom: 62px;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -247,9 +249,5 @@
       right: 0;
       top: 50%;
     }
-  }}
-
-
-
-
-
+  }
+}
