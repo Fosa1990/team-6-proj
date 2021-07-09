@@ -1,16 +1,27 @@
-# Parcel boilerplate
+# Макет: [ https://www.figma.com/file/Lwv5EU4HzzU4iG1SNaZeKK/BHO-NEW?viewport=0%2C0%2C1 ]
 
-## Скрытые файлы
+Наша команда: Switchers
+
+1. TeamLid: Анатолій Сулипа [ https://github.com/Fosa1990 ];
+2. Scrum-master: Наталя Сагайдак [ https://github.com/natalia-ya ];
+3. Team-Dev: Богдан Касянчик [ https://github.com/Bogdan-Kasyanchuk ];
+4. Ірина Терещенко [ https://github.com/IraTereshchenko ];
+5. Олександр Калініченко [ https://github.com/Hammer-UA ];
+6. Мартін Ліміновіч [ https://github.com/MartinLilt ];
+
+## Parcel boilerplate
+
+### Скрытые файлы
 
 Включите отображение скрытых файлов и папок в проводнике своей операционной системы, иначе вы не
 сможете выбрать и скопировать себе файлы настроек проекта, имена которых начинаются с точки.
 
-## Зависимости
+### Зависимости
 
 На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/) со всеми
 дополнительными инструментами кроме **Chocolatey** - его ставить не нужно.
 
-## Перед началом работы
+### Перед началом работы
 
 Один раз на проект установить все зависимости.
 
@@ -18,7 +29,7 @@
 npm ci
 ```
 
-### Разработка
+#### Разработка
 
 Запустить режим разработки.
 
@@ -28,7 +39,7 @@ npm run dev
 
 Во вкладке браузера перейти по адресу [http://localhost:1234](http://localhost:1234).
 
-### Деплой
+#### Деплой
 
 Сборка будет автоматически собирать и деплоить продакшен версию проекта на GitHub Pages, в ветку
 `gh-pages`, каждый раз когда обновляется ветка `main`. Например, после прямого пуша или принятого
@@ -49,7 +60,7 @@ npm run dev
 свойстве `homepage`, например
 [https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
 
-## Файлы и папки
+### Файлы и папки
 
 - Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
   `src/sass/main.scss`
