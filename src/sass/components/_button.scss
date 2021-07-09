@@ -46,6 +46,7 @@
   letter-spacing: 0.08em;
   color: $white-color;
   transition: color $time250 $cubic;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     padding-top: 17px;
     padding-bottom: 17px;
@@ -65,8 +66,8 @@
 .button-animation {
   transform: scale(1);
   border: 2px solid $accent-color;
-  transition: transform $time500 $cubic, border-radius $time500 $cubic, box-shadow $time250 $cubic,
-    color $time500 $cubic $time250, background-color $time250 $cubic $time250;
+  transition: transform $time250 $cubic, border-radius $time250 $cubic, box-shadow $time250 $cubic,
+    color $time250 $cubic, background-color $time250 $cubic;
   &:hover,
   &:focus {
     border-radius: 20px;
