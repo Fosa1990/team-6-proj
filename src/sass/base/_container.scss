@@ -1,11 +1,7 @@
-// Стилі контейнеру
-// Контейнер Div
 .container {
   max-width: 100%;
   margin: 0 auto;
 }
-
-// 320+
 @media screen and (min-width: $mobile-320) {
   .container {
     min-width: 320px;
@@ -14,8 +10,6 @@
     padding-left: 20px;
   }
 }
-
-// 768+
 @media screen and (min-width: $tablet-768) {
   .container {
     width: 768px;
@@ -24,8 +18,6 @@
     padding-left: 40px;
   }
 }
-
-// 1366+
 @media screen and (min-width: $desktop-1366) {
   .container {
     width: 1366px;

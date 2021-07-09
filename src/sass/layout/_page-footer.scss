@@ -91,7 +91,7 @@
   margin-right: 10px;
   fill: $accent-color;
   transform: rotateZ(0deg);
-  transition: transform $time1250 $cubic;
+  transition: transform $time250 $cubic;
   @media screen and (min-width: $tablet-768) {
     width: 24px;
     height: 24px;
@@ -113,8 +113,10 @@
   @media screen and (min-width: $tablet-768) {
     position: relative;
     &::after {
-      position: absolute;
       content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 1px;
       height: 40px;
       border: 1px solid $text-third-color;
