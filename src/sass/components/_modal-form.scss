@@ -91,6 +91,12 @@
   .form__field:focus-within &::placeholder {
     color: $place-holder-color;
   }
+  &:not(:placeholder-shown):required:valid {
+    border: 1px solid $color-success;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid $color-error;
+  }
 }
 .form__label {
   position: absolute;
