@@ -4,10 +4,10 @@
 
 1. TeamLid: Анатолій Сулипа [ https://github.com/Fosa1990 ];
 2. Scrum-master: Наталя Сагайдак [ https://github.com/natalia-ya ];
-3. Team-Dev: Богдан Касянчик [ https://github.com/Bogdan-Kasyanchuk ];
-4. Ірина Терещенко [ https://github.com/IraTereshchenko ];
-5. Олександр Калініченко [ https://github.com/Hammer-UA ];
-6. Мартін Ліміновіч [ https://github.com/MartinLilt ];
+3. Dev: Богдан Касянчик [ https://github.com/Bogdan-Kasyanchuk ];
+4. Dev: Ірина Терещенко [ https://github.com/IraTereshchenko ];
+5. Dev: Олександр Калініченко [ https://github.com/Hammer-UA ];
+6. Dev: Мартін Ліміновіч [ https://github.com/MartinLilt ];
 
 ## Parcel boilerplate
 
