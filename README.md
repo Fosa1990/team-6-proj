@@ -5,6 +5,6 @@
 3. Dev: Богдан Касянчик [ https://github.com/Bogdan-Kasyanchuk ];
 4. Dev: Ірина Терещенко [ https://github.com/IraTereshchenko ];
 5. Dev: Олександр Калініченко [ https://github.com/Hammer-UA ];
-6. Dev: Мартін Ліміновіч [ https://github.com/MartinLilt ];
+6. Dev: Мартін Лімінович [ https://github.com/MartinLilt ];
 
-### Макет: [ https://www.figma.com/file/Lwv5EU4HzzU4iG1SNaZeKK/BHO-NEW?viewport=0%2C0%2C1 ]
+#### Макет: [ https://www.figma.com/file/Lwv5EU4HzzU4iG1SNaZeKK/BHO-NEW?viewport=0%2C0%2C1 ]
